@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>统一资料管理</title>
+
+
+<include file="Common:mhead" />
+
+</head>
+
+<body>
+
+
+
+
+<br />
+
+<form name="formnews" method="post" action="{:U('/admin/save')}" onsubmit="return check_form()" enctype="multipart/form-data">
+<table border="0" cellpadding="1" cellspacing="1" align="center" class="center main mtable">
+	<tr class="titlebg">
+		<th colspan="2">添加信息</th>
+	</tr>
+	
+
+
+	<tr>
+		<td width="10%" class="tright">名 称 &nbsp;</td>
+		<td width="80%">&nbsp; 
+			<input name="title" id="title" size="100" />
+			<input type="hidden" name="action" value="add" />
+		</td>
+	</tr>
+	<input name="is_special" type="hidden" id="is_special" value="1" />
+
+
+	<tr>
+		<td class="tright">上传 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="path" id="path" type='file' />
+		</td>
+	</tr>
+
+	<tr>
+		<td class="tright" height="50"></td>
+		<td>&nbsp; <input type="submit" value="保存" class="button" /></td>
+	</tr>
+	
+</table>
+</form>
+
+
+<script language="javascript">
+	function check_form(){
+		
+		if(objNode('title').value.trim() == ''){
+			alert('名称必须填写');
+			objNode('title').focus();
+			return false;
+		}
+
+		
+	}
+</script>
+
+
+
+<include file="Common:mfooter" />
+
+
+</body>
+</html>

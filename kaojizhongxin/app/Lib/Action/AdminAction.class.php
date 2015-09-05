@@ -34,10 +34,36 @@ class AdminAction extends Action {
         } else {  //列表
 
             $res = M('Update');
-            $list = $res->order('id')->select();
+            $list = $res->where('is_special = 0')->order('id')->select();
 
             $this->assign('list' ,$list);
             $this->display('upload_index');
+
+        }
+
+    }
+        public function upload_special(){
+
+
+
+        if ( I('action') == 'add' ){  //添加
+            $this->display('upload_add_special');
+        } elseif ( I('action') == 'edit' ){  //修改
+            // print_r('ddd');
+
+            $res = M('Update');
+            $vo = $res->where('id=' .I('id'))->find();
+
+            $this->assign('vo' ,$vo);
+            $this->display('upload_edit_special');
+
+        } else {  //列表
+
+            $res = M('Update');
+            $list = $res->where('is_special = 1')->order('id')->select();
+
+            $this->assign('list' ,$list);
+            $this->display('upload_special');
 
         }
 
@@ -47,7 +73,15 @@ public function download_index(){
 
 
             $res = M('Update');
-            $list = $res->order('id')->select();
+            // die(I('id'));
+            // var_dump($_SESSION);
+            if ($_SESSION['username'] == '111111') {
+                $list = $res->where('is_special = 1')->order('id')->select();
+            }
+            else {
+                $list = $res->where('is_special = 0')->order('id')->select();
+            }
+            
 
             $this->assign('list' ,$list);
             $this->display('download_index');
@@ -112,9 +146,13 @@ public function download_index(){
 
 
         $data['title']   = I('title');
+        // var_dump($_POST);
+        // die(I('is_special'));
+        $data['is_special'] = I('is_special');
 
          $date = new DateTime();
          $data['odate'] = $date->format("U");
+
         // $data['url']     = $_POST['url'];
 
 
