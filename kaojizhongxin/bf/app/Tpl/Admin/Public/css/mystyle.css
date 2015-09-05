@@ -1,0 +1,42 @@
+﻿
+*{font-size:12px; font-family:Tahoma,Verdana,微软雅黑,新宋体}
+
+a{ color:Black; text-decoration:none;}
+a:hover{ color:Red; text-decoration:underline;}
+
+
+.tfont14{ font-size:14px;}
+.blank05{ height:5px; display:block;}
+.blank10{ height:10px; display:block;}
+.blank15{ height:15px; display:block;}
+.display-none{ display:none;}
+
+.center{ margin:0 auto;}
+.tcenter{ text-align:center;}
+.main{ width:95%; margin:0 auto;}
+.mborder{ border:1px solid #E0ECFF;}
+.navh{ height:35px; line-height:35px; text-indent:10px;}
+.navh a{ font-size:14px !important;}
+.navh a:hover{ font-weight:bold;}
+
+.navh .cur{ text-decoration:underline; color:red; font-weight:bold;}
+
+
+.mtable{ background-color:#E9F0FA;}
+.mtable td{ background-color:white; line-height:220%;}
+.titlebg{ background:url(../images/titlebg.jpg) repeat-x; height:26px; line-height:26px;}
+
+.tright{ text-align:right;}
+.tleft{ text-align:left;}
+
+.button{ background:url(../images/button.jpg) no-repeat; width:65px; height:26px; border:0px; font-size:14px; font-weight:bold; cursor:pointer;}
+
+.igreen{ color:green;}
+.ired{ color:red;}
+
+.iblue{ color:blue; text-decoration:underline;}
+
+.page a{padding:8px;}
+
+.textarea{ width:520px; height:100px; overflow:auto;}
+

@@ -1,0 +1,22 @@
+
+index_head.asp
+
+<link href="menu/menu.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="menu/menu.js" type="text/javascript"></script>
+
+
+
+index_top.asp
+
+
+<ul id="jsddm"></ul>
+
+
+菜单项
+<li><a href="about.asp?aid=4">资质荣誉</a>
+	<ul>
+		<li><a href="about.asp?aid=4" class="isub">资质证明</a></li>
+		<li><a href="about.asp?aid=5" class="isub">营业执照</a></li>
+		<li><a href="about.asp?aid=6" class="isub">奖励荣誉</a></li>
+	</ul>
+</li>

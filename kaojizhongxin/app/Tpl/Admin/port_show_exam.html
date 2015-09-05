@@ -1,0 +1,33 @@
+<script>
+	
+</script>
+<div class="row">
+<div id="cb_add" class="col-sm-8 col-sm-offset-2">
+	<table class="table table-striped">
+        <thead>
+          <tr>
+
+            <th>考试时间</th>
+            <th>开始时间</th>
+            <th>结束时间</th>
+            <th>开启状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php if($data1 == "") echo "<tr><td>暂无考试</td></tr>"?>
+          <volist name="data1" id="vo">
+           <tr>
+            <td>{$vo.ks_time}</td>
+            <td>{$vo.k_time}</td>
+            <td>{$vo.j_time}</td>
+            <td>{$vo['on_off']=='true'?'开启':'关闭'}</td>
+            <td>
+                <button onClick="bm_load('port_update_exam/id/{$vo.bm_id}')"  type="button" class="btn btn-default">修改</button>
+            </td>
+          </tr>
+    	  </volist>
+        </tbody>
+      </table>
+</div>
+</div>

@@ -1,0 +1,1215 @@
+[ 2014-03-10T17:01:56+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000756s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+NOTIC: [8] Undefined index: username F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 16 行.
+NOTIC: [8] Undefined index: password F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.003549s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="" )  [ RunTime:0.000794s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008677s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000452s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000941s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000520s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002942s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000756s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2014-03-10T17:07:48+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001004s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+NOTIC: [8] Undefined index: username F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 16 行.
+NOTIC: [8] Undefined index: password F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.003281s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="" )  [ RunTime:0.000740s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.065325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065406s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000646s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000699s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000561s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002861s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000702s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2014-03-10T17:07:57+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001201s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002082s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000675s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006353s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000402s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000415s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000280s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001775s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000853s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2014-03-10T17:10:48+08:00 ] 0.0.0.0 /cs/index.php/Admin/index/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001289s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001382s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+NOTIC: [8] Undefined index: username F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002137s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000493s ]
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 22 行.
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005580s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001038s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000565s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000429s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002884s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001045s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001106s ]
+
+[ 2014-03-10T17:11:12+08:00 ] 0.0.0.0 /cs/index.php/Admin/index/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000662s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+NOTIC: [8] Undefined index: username F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.003514s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000601s ]
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 22 行.
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005268s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000290s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000292s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000242s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001295s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000482s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000527s ]
+
+[ 2014-03-10T17:11:21+08:00 ] 0.0.0.0 /cs/index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000942s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Undefined index: action F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008670s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000312s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000432s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000293s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001624s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000458s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2014-03-10T17:11:29+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000636s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002289s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000410s ]
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 22 行.
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006383s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000455s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000420s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000296s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001860s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000495s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2014-03-10T17:12:18+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000654s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002378s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000463s ]
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 22 行.
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 23 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006263s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000305s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000289s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000219s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001266s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000457s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2014-03-10T17:13:09+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000793s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002350s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000548s ]
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 23 行.
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007642s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000399s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000367s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000291s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001864s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000718s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2014-03-10T17:13:53+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001840s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000275s ]
+NOTIC: [8] Trying to get property of non-object F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009301s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000446s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000393s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000284s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001788s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000671s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2014-03-10T17:14:21+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000965s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002229s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: xt F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000450s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000314s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000216s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001462s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000466s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2014-03-10T17:14:41+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000913s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002054s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000625s ]
+NOTIC: [8] Undefined index: xt F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006397s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000432s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000390s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000300s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001638s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000461s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2014-03-10T17:14:57+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000918s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001806s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000651s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009312s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000409s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000318s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000216s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001430s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000457s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2014-03-10T17:16:11+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000847s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002571s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.001279s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008829s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000401s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000370s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001664s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000545s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2014-03-10T17:16:39+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001973s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006851s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000396s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000337s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000258s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001523s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000547s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.002582s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002400s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000073s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000035s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000008s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003540s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000032s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.003399s ]
+
+[ 2014-03-10T17:16:55+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000638s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001877s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006798s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000430s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000402s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000292s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001831s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000701s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000781s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003766s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002964s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000116s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000058s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000012s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004993s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000045s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.004955s ]
+
+[ 2014-03-10T17:17:03+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000917s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001952s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000509s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006310s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000312s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000304s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000205s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001300s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000491s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003825s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002027s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000121s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000059s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000014s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004630s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000053s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.005286s ]
+
+[ 2014-03-10T17:17:09+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001119s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+NOTIC: [8] Undefined index: action F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 15 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008145s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000473s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000429s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001783s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000470s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2014-03-10T17:17:16+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001994s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000634s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007783s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000442s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000419s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000338s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001805s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000528s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000568s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.002616s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002744s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000067s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000035s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000007s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003598s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000029s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.003756s ]
+
+[ 2014-03-10T17:18:14+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001030s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+NOTIC: [8] Undefined index: action F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010239s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000462s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000313s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001866s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000683s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2014-03-10T17:18:25+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000812s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002891s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000868s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013293s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000678s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000699s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000456s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002687s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000718s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000783s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005711s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.004055s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000112s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000057s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000012s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007154s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000055s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.008642s ]
+
+[ 2014-03-10T17:27:35+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001668s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001826s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002826s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000770s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010688s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000449s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000455s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000341s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001893s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000567s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.002758s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002910s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000067s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000035s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000008s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003820s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php:99) F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000044s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.003647s ]
+
+[ 2014-03-10T17:28:09+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000820s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000899s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [8] Undefined index: username F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 17 行.
+NOTIC: [8] Undefined index: password F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="" )  [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007828s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000454s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000438s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001765s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000730s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2014-03-10T17:28:16+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000882s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002329s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000690s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010444s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000852s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000791s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000652s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003759s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001247s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2014-03-10T17:28:52+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001191s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.003173s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000422s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009679s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000491s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000514s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000565s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002518s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001112s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001187s ]
+
+[ 2014-03-10T17:29:12+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000855s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002689s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000639s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008250s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000496s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000689s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000791s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002986s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000767s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2014-03-10T17:30:37+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000902s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+NOTIC: [8] Undefined index: username F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 18 行.
+NOTIC: [8] Undefined index: password F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002069s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="" )  [ RunTime:0.000494s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008683s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000526s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000600s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000488s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002598s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000972s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2014-03-10T17:31:24+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001222s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002573s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010480s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000638s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000569s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000471s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000582s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2014-03-10T17:32:27+08:00 ] 0.0.0.0 /cs/index.php/Admin/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001244s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001387s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009263s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000441s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000432s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000313s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001757s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000482s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000522s ]
+
+[ 2014-03-10T17:35:52+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000859s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001997s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000559s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007799s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000731s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000706s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000541s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003009s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001149s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001233s ]
+
+[ 2014-03-10T17:38:17+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001421s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001531s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002786s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000853s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006872s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000529s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000450s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000382s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001984s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000651s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2014-03-10T17:38:25+08:00 ] 0.0.0.0 /cs/index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001453s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001563s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [8] Undefined index: action F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009483s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000737s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000601s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000402s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002638s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000588s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2014-03-10T17:38:31+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001353s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001935s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000470s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009467s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000651s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000664s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000416s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002349s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000470s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2014-03-10T17:40:13+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001272s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002835s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="23456" )  [ RunTime:0.000515s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010679s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000779s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000635s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000524s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002847s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000899s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2014-03-10T17:40:20+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001297s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001392s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002710s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000568s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007190s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000506s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000448s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000388s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001987s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000645s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2014-03-10T17:41:22+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001154s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002969s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007601s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000676s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000588s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000366s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002270s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000610s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2014-03-10T17:41:28+08:00 ] 0.0.0.0 /cs/index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000846s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [8] Undefined index: action F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008310s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000513s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000700s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000641s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002851s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000981s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2014-03-10T17:41:31+08:00 ] 0.0.0.0 /cs/index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001268s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001373s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+NOTIC: [8] Undefined index: action F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010642s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000502s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000456s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001969s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000638s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2014-03-10T17:41:40+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001184s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001297s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001965s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007772s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000421s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000427s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000307s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001722s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000455s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2014-03-10T17:41:45+08:00 ] 0.0.0.0 /cs/index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000752s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+NOTIC: [8] Undefined index: action F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008033s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000474s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000433s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000312s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001819s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000490s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2014-03-10T17:43:18+08:00 ] 0.0.0.0 /cs/index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001178s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007240s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000369s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000362s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000330s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001818s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000686s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2014-03-10T18:19:34+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000891s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+ERR: 模板不存在[./app/Tpl/Admin/index33.html]
+
+[ 2014-03-10T18:20:13+08:00 ] 0.0.0.0 /cs/index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000877s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+ERR: 模板不存在[./app/Tpl/Public/menu.html]
+
+[ 2014-03-10T18:22:35+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001389s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001494s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.110467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110553s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000646s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000627s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000491s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002665s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000954s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001029s ]
+
+[ 2014-03-10T18:22:40+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001330s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006494s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000474s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000429s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000337s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001849s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000619s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2014-03-10T18:22:55+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000739s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009999s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000713s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000669s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002944s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000985s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2014-03-10T18:23:43+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001216s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001327s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009505s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000506s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000458s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000309s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001854s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000601s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2014-03-10T18:26:49+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000873s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010544s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000693s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000668s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000530s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002825s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000946s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2014-03-10T18:27:28+08:00 ] 0.0.0.0 /cs/index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000770s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+NOTIC: [8] Undefined index: action F:\xampp\htdocs\cs\app\Lib\Action\AdminAction.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h F:\xampp\htdocs\cs\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009083s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000469s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000423s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000313s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001779s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000709s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2014-03-10T18:27:32+08:00 ] 0.0.0.0 /cs/index.php/Admin/login/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001135s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.002534s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="admin" AND password="123456" )  [ RunTime:0.000322s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007595s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000454s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000424s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000415s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002259s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001080s ]
+

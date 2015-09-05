@@ -1,0 +1,36 @@
+<script>
+	
+</script>
+<div class="row">
+<div id="cb_add" class="col-sm-8 col-sm-offset-2">
+	<table class="table table-striped">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>考点名称</th>
+            <th>考试时间</th>
+            <th>开始时间</th>
+            <th>结束时间</th>
+            <th>开启状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <volist name="data" id="vo">
+           <tr>
+            <td>{$vo.bm_id}</td>
+            <td>{$vo['Kjj'].bm_name}</td>
+            <td>{$vo.ks_time}</td>
+            <td>{$vo.k_time}</td>
+            <td>{$vo.j_time}</td>
+            <td>{$vo['on_off']=='true'?'开启':'关闭'}</td>
+            <td>
+            	<button onclick="bm_dele({$vo.bm_id},'kshd')" type="button" class="btn btn-default">删除</button>
+                <button onClick="bm_load('ks_update/id/{$vo.bm_id}')"  type="button" class="btn btn-default">修改</button>
+            </td>
+          </tr>
+    	  </volist>
+        </tbody>
+      </table>
+</div>
+</div>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中国美术学院 福建考级中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]--> 
+     
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	  <script src="__PUBLIC__/js/jquery-1.8.0.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  	 <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+   
+    
+  	 <script src="__PUBLIC__/bootstrap/js/bootstrap-datetimepicker.js"></script>
+     <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap-datetimepicker.css">
+       	 <script src="__PUBLIC__/bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+          <script src="__PUBLIC__/js/jquery.jqprint.js"></script>
+          <script src="__PUBLIC__/js/respond.min.js"></script>
+          <script src="__PUBLIC__/js/jquery.PrintArea.js"></script>
+  
+    <style>
+       #a1{
+		   background-image:url(__ROOT__/app/Common/images/layout-browser-hd-bg.gif);
+		   height:25px;
+		   line-height:25px;
+		   }
+	   #a1 h1{
+		   font-size:16px;
+		   color:#FFF;
+		   line-height:25px;
+		   margin:0px;
+		   }
+		#a1 span a{
+			color:#FFF;			
+			}
+		#bm_l>button{
+			margin-top:2px;
+			
+			}
+		#a1 span{
+			color:#FFF;
+			}
+		#bm_body{
+			
+			min-height:450px;
+			}			
+    </style>
+    <script>
+		//统一载入ajax页面
+    	function bm_load(bm_action){
+			//alert(__ACTION__+"");
+			$.get("__URL__/"+bm_action, 
+  					function(data){
+						//alert(data);
+					$("#bm_body").html(data);
+   					 
+ 					 });
+			}
+			function bm_loadzt(bm_action){
+			 var bm_where="";
+			 if (bm_action!=3){
+			 bm_where="bm_kszt="+bm_action+" and ";
+			 }else{
+			 bm_where="bm_kszt in (0,1,2) and ";
+			 }
+			$.post("__URL__/ksbm_select",{"bm_where":bm_where},
+  					function(data){
+					$("#bm_body").html(data);
+					
+				});
+			}
+		function bm_load1(bm_action){
+			
+		
+			window.location.replace("__URL__/"+bm_action);
+			
+			}	
+		//统一写入数据	
+		function bm_add(bm_action,load_url){
+			var data;
+			data={};
+			if(bm_action=="cb_add" || bm_action=="zy_add" ){
+				data={"bm_name":$("#bm_name").val(),"bm_bm":$("#bm_bm").val(),"bm_t1":$("#bm_t1").val()};
+			}else if(bm_action=="ks_add"){
+				      //alert($("#on_off").prop("checked"));
+					  // exit;
+				data={
+						"kjj_id"  : id,
+						"ks_time" : $("#ks_time").val(),
+						"k_time"  : $("#k_time").val(),
+						"j_time"  : $("#j_time").val(),
+						"on_off"  : $("#on_off").prop("checked"),
+					}
+			}else if(bm_action=="admin_add"){
+				    var zt;
+					
+				    if(arr1[0]==1){
+						zt=1;
+						}else{
+					    zt=2;		
+					}
+					data={
+						"kjj_id"    :arr1[1] ,
+						"zt"  : zt,
+						"name" : $("#name").val(),
+						"password"  : $("#password").val(),
+					}
+					
+				}else if(bm_action=="cb_update_ac" || bm_action=="zy_update_ac" ){
+					data={"bm_name":$("#bm_name").val(),"bm_bm":$("#bm_bm").val(),"bm_id":$("#bm_id").val(),"bm_t1":$("#bm_t1").val()};
+					
+				}else if(bm_action=="ks_update_ac"){
+				      //alert($("#on_off").prop("checked"));
+					  // exit;
+				data={
+						"bm_id"   : $("#bm_id").val(),
+						"kjj_id"  : $("#kjj_id").val(),
+						"ks_time" : $("#ks_time").val(),
+						"k_time"  : $("#k_time").val(),
+						"j_time"  : $("#j_time").val(),
+						"on_off"  : $("#on_off").prop("checked"),
+					}
+				}else if(bm_action=="kshd_update_ac"){
+				var arr ;
+				arr=$("#bm_zy").val();
+				arr=arr.split("|");
+				data.bm_name=$("#bm_name").val();
+				data.bm_py	=$("#bm_py").val();
+				data.bm_sex =$("#bm_sex").val();
+				data.bm_csdate=$("#bm_csdate").val();
+				data.bm_mz  =$("#bm_mz").val();
+				data.bm_cell=$("#bm_cell").val();
+				data.bm_mail=$("#bm_mail").val();
+				data.bm_add=$("#bm_add").val();
+				data.bm_zy_id  = arr[0];
+				data.bm_zy     = arr[1];
+				data.bm_level=$("#bm_level").val();
+				data.bm_ylevel =$("#bm_ylevel").val();
+				data.bm_kjj_id= $("#bm_kjj_id").val();
+				data.bm_kjj	  = $("#bm_kjj").val();
+				data.id	  = $("#id").val();
+				
+				}
+				
+			$.post("__URL__/"+bm_action,data,
+  					function(data){	
+					
+					  if(typeof(data)=="object"){
+						 
+						  alert(data.info);
+						  
+						 //存在就跳转	 
+						if(load_url){
+				
+					 		bm_load(load_url);
+						}
+						   return;
+						  }	
+					  $(":text").val(" ");				
+					  alert(data);
+					
+   					 //存在就跳转	 
+					if(load_url){
+				
+					 	bm_load(load_url);
+					}		 
+ 					 });
+				
+			}
+		 //统一写入数据	
+
+		function bm_add1(bm_action,load_url){
+			var data;
+			data={};
+			if(bm_action=="cb_add" || bm_action=="zy_add" ){
+				data={"bm_name":$("#bm_name").val(),"bm_bm":$("#bm_bm").val()};
+			}else if(bm_action=="ks_add"){
+				      //alert($("#on_off").prop("checked"));
+					  // exit;
+				data={
+						"kjj_id"  : id,
+						"ks_time" : $("#ks_time").val(),
+						"k_time"  : $("#k_time").val(),
+						"j_time"  : $("#j_time").val(),
+						"on_off"  : $("#on_off").prop("checked"),
+					}
+			}else if(bm_action=="admin_add"){
+				    var zt;
+				    if(arr[0]==1){
+						zt=1;
+						}else{
+					    zt=2;		
+					}
+					data={
+						"kjj_id"    :arr[1] ,
+						"zt"  : zt,
+						"name" : $("#name").val(),
+						"password"  : $("#password").val(),
+					}
+					
+				}else if(bm_action=="cb_update_ac" || bm_action=="zy_update_ac" ){
+					data={"bm_name":$("#bm_name").val(),"bm_bm":$("#bm_bm").val(),"bm_id":$("#bm_id").val(),"bm_t1":$("#bm_t1").val()};
+					
+				}else if(bm_action=="ks_update_ac"){
+				      //alert($("#on_off").prop("checked"));
+					  // exit;
+				data={
+						"bm_id"   : $("#bm_id").val(),
+						"kjj_id"  : id,
+						"ks_time" : $("#ks_time").val(),
+						"k_time"  : $("#k_time").val(),
+						"j_time"  : $("#j_time").val(),
+						"on_off"  : $("#on_off").prop("checked"),
+					}
+				}else if(bm_action=="kshd_update_ac"){
+				var arr ;
+				arr=$("#bm_zy").val();
+				arr=arr.split("|");
+				data.bm_name=$("#bm_name").val();
+				data.bm_py	=$("#bm_py").val();
+				data.bm_sex =$("#bm_sex").val();
+				data.bm_csdate=$("#bm_csdate").val();
+				data.bm_mz  =$("#bm_mz").val();
+				data.bm_cell=$("#bm_cell").val();
+				data.bm_fj=$("#bm_fj").val();
+				data.bm_mail=$("#bm_mail").val();
+				data.bm_add=$("#bm_add").val();
+				data.bm_zy_id  = arr[0];
+				data.bm_zy     = arr[1];
+				data.bm_level=$("#bm_level").val();
+				data.bm_ylevel =$("#bm_ylevel").val();
+				data.bm_kjj_id= $("#bm_kjj_id").val();
+				data.bm_kjj	  = $("#bm_kjj").val();
+				data.id	  = $("#id").val();
+				
+				}else if(bm_action=="admin_xg"){
+					
+				data={
+						"id"   : $("#id").val(),
+						"name"  : $("#name").val(),
+						"password" : $("#password").val(),
+						
+					}
+					
+				}
+				
+			$.post("__URL__/"+bm_action,data,
+  					function(data){	
+					
+					  if(typeof(data)=="object"){
+						 
+						  alert(data.info);
+						  
+						 //存在就跳转	 
+						if(load_url){
+				
+					 		bm_load(load_url);
+						}
+						   return;
+						  }	
+					  $(":text").val(" ");				
+					  alert(data);
+					
+   					 //存在就跳转	 
+					if(load_url){
+				
+					 	bm_load(load_url);
+					}		 
+ 					 });
+				
+			}	
+		//统一删除数据	
+		function bm_dele(id,name){
+			var r=confirm("是否删除");
+				if (r==true)
+ 			 {
+			var data;
+			data={"id":id,"name":name};
+			$.post("__URL__/bm_dele",data,
+  					function(data){					
+					   eval(data);
+					 
+ 					 });
+			 }
+		
+		}
+					
+		//打印	
+		function ksbm_dyb(id,name){ 
+			var data;
+			data={"id":id,"name":name};
+			$.post("__URL__/ksbm_dyb",data,
+  					function(data){
+						//alert(data);
+						$("#bm_body").html(data);
+						//bm_load(load_url);					
+					   //eval(data);
+					 
+ 					 });
+		
+		}	
+		
+			
+	
+
+    </script>
+  </head>
+  
+  <body>
+  	 <div class="row">
+     	<div class="col-sm-12 "  id="a1">
+        	<img style="height:25px; margin-left:10px; float:left;" src="__PUBLIC__/images/blocks.png" >
+        	<h1  style="float:left; padding-left:10px;">报名系统，中国美术学院 福建考级中心</h1>
+            <span  style="float:right;">欢迎&nbsp;&nbsp;{$name}&nbsp;&nbsp;&nbsp;<a  href="__URL__/bm_quit">退出登录</a>&nbsp;&nbsp;<a onClick="bm_load('bm_admin_xg?id={$id}')" href="#" >修改密码</a></span>
+        </div>
+     </div>
+     <div class="row">
+     	<div class="col-sm-2" id="bm_l">
+                 <if condition="$Think.session.zt eq 1 ">
+         		<button type="button" class="btn btn-primary  btn-block" data-toggle="collapse" data-target="#demo">
+  					后台用户管理 <span class="glyphicon glyphicon-chevron-down"></span>
+				</button>
+
+				<div id="demo" class="collapse" >
+                	<ul class="list-group">
+  						<li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_load('bm_admin_show')" href="#">用户添加</a>
+                        </li>
+                        <li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_load('bm_admin_select')"  href="#">用户管理</a>
+                        </li>
+                     </ul>                      
+                </div>
+                
+        		<button type="button" class="btn btn-primary  btn-block" data-toggle="collapse" data-target="#demo1">
+  					考级承办点信息管理 <span class="glyphicon glyphicon-chevron-down"></span>
+				</button>
+
+				<div id="demo1" class="collapse" >
+                	<ul class="list-group">
+  						<li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_load('cb_show')" href="#">承办点添加</a>
+                        </li>
+                        <li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_load('cb_select')" href="#">承办点查看</a>
+                        </li>
+                     </ul>      
+                </div>
+                
+                <button type="button" class="btn btn-primary  btn-block" data-toggle="collapse" data-target="#demo2">
+  					报考专业管理 <span class="glyphicon glyphicon-chevron-down"></span>
+				</button>
+
+				<div id="demo2" class="collapse" >
+                	<ul class="list-group">
+  						<li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_load('zy_show')"  href="#">专业添加</a>
+                        </li>
+                        <li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_load('zy_select')" href="#">专业查看</a>
+                        </li>
+                     </ul>      
+                </div>
+                <button type="button" class="btn btn-primary  btn-block" data-toggle="collapse" data-target="#demo3">
+  					考试活动管理 <span class="glyphicon glyphicon-chevron-down"></span>
+				</button>
+
+				<div id="demo3" class="collapse" >
+                	<ul class="list-group">
+  						<li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_load('ks_show')"  href="#">考试时间添加</a>
+                        </li>
+                        <li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_load('ks_select')" href="#">活动查看</a>
+                        </li>
+                     </ul>      
+                </div>
+               </if>
+                 <button type="button" class="btn btn-primary  btn-block" data-toggle="collapse" data-target="#demo4">
+  					考生报考资料管理 <span class="glyphicon glyphicon-chevron-down"></span>
+				</button>
+
+
+
+				<div id="demo4" class="collapse" >
+                	<ul class="list-group">
+  						<li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_loadzt(3)"  href="#">考生报考资料查看</a>
+                        </li>
+						<li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_loadzt(0)"  href="#">待考</a>
+                        </li>
+						<li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_loadzt(1)"  href="#">评卷中</a>
+                        </li>
+						<li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                        	<a onClick="bm_loadzt(2)"  href="#">成绩公布</a>
+                        </li>
+                     </ul>      
+                </div>
+                                <if condition="$Think.session.zt eq 2">
+                <button type="button" class="btn btn-primary  btn-block" data-toggle="collapse" data-target="#demo3">
+                    考试活动管理 <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+
+                <div id="demo3" class="collapse" >
+                    <ul class="list-group">
+                        <li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                            <a onClick="bm_load('port_show_exam')" href="#">活动查看</a>
+                        </li>
+                     </ul>      
+                </div>
+            </if>
+                <button type="button" class="btn btn-primary  btn-block" data-toggle="collapse" data-target="#demo5">
+                    资料下载 <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+
+                <div id="demo5" class="collapse" >
+                    <ul class="list-group">
+                    <if condition="$Think.session.zt eq 1 ">
+                        <li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                            <a onClick="bm_load('upload_index')"  href="#">统一资料管理</a>
+                        </li>
+                    </if>
+                    <if condition="$Think.session.zt eq 2 ">
+                        <li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                           <a onClick="bm_load('download_index')"  href="#">资料下载</a>
+                        </li>
+                     </ul>  
+                    </if>
+                </div>
+       	 </div>
+        <div class="col-sm-10">
+        	<div id="bm_body">
+  
+            </div>
+        </div>
+     
+     </div>
+    
+    
+   
+  </body>
+</html>

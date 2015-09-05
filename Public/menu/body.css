@@ -1,0 +1,6 @@
+/* common page styles */
+
+	.clear
+	{	clear: both;
+		overflow: hidden;
+		height: 0}

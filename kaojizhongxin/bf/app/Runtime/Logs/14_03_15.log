@@ -1,0 +1,522 @@
+[ 2014-03-15T09:20:20+08:00 ] 0.0.0.0 /cs/index.php/Admin/login
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040390s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000435s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000348s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000255s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001562s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000726s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2014-03-15T09:20:22+08:00 ] 0.0.0.0 /cs/index.php/Admin/cb_show
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000876s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\d6711bc6fa5c743b5b4b610a9a1cf391.php 第 8 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\d6711bc6fa5c743b5b4b610a9a1cf391.php 第 12 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\d6711bc6fa5c743b5b4b610a9a1cf391.php 第 13 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\d6711bc6fa5c743b5b4b610a9a1cf391.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.055270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055322s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000421s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000380s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000308s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001643s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000547s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2014-03-15T09:20:25+08:00 ] 0.0.0.0 /cs/index.php/Admin/cb_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000680s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000761s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.045423s ]
+SQL: SELECT * FROM `kjj`  [ RunTime:0.000493s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037919s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000291s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000282s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000202s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001226s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000480s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2014-03-15T09:20:26+08:00 ] 0.0.0.0 /cs/index.php/Admin/zy_show
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000660s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 8 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 12 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 13 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 15 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006285s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000336s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000299s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000211s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001333s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000626s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2014-03-15T09:20:27+08:00 ] 0.0.0.0 /cs/index.php/Admin/zy_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000674s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `zygl` [ RunTime:0.036288s ]
+SQL: SELECT * FROM `zygl`  [ RunTime:0.000433s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008324s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000459s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000564s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000401s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002020s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001020s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2014-03-15T09:20:29+08:00 ] 0.0.0.0 /cs/index.php/Admin/ks_show
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.002272s ]
+SQL: SELECT * FROM `kjj`  [ RunTime:0.000261s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 10 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 10 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 23 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 27 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 32 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 36 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 43 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 47 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 54 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 55 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 65 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008024s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000336s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000319s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000217s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001389s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000496s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2014-03-15T09:20:30+08:00 ] 0.0.0.0 /cs/index.php/Admin/ks_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.122502s ]
+SQL: SELECT * FROM `kshd`  [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.001993s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='35' ) LIMIT 1   [ RunTime:0.000579s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='37' ) LIMIT 1   [ RunTime:0.000432s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='37' ) LIMIT 1   [ RunTime:0.000429s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007199s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000326s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000286s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000203s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001274s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000473s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2014-03-15T09:24:10+08:00 ] 0.0.0.0 /cs/index.php/Admin/zy_show
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001351s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 8 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 12 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 13 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 15 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030486s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000462s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000426s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000307s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001750s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000554s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2014-03-15T09:24:10+08:00 ] 0.0.0.0 /cs/index.php/Admin/cb_show
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000642s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\d6711bc6fa5c743b5b4b610a9a1cf391.php 第 8 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\d6711bc6fa5c743b5b4b610a9a1cf391.php 第 12 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\d6711bc6fa5c743b5b4b610a9a1cf391.php 第 13 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\d6711bc6fa5c743b5b4b610a9a1cf391.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007665s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000354s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000374s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000231s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001634s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000705s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2014-03-15T09:24:14+08:00 ] 0.0.0.0 /cs/index.php/Admin/bm_admin_show
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000908s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.056800s ]
+SQL: SELECT * FROM `kjj`  [ RunTime:0.000464s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016980s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000313s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000288s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000210s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001302s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000556s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2014-03-15T10:32:54+08:00 ] 0.0.0.0 /cs/index.php/Admin/bm_admin_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001771s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001890s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001916s ]
+SQL: SELECT * FROM `bm_admin`  [ RunTime:0.000558s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: bm_id F:\xampp\htdocs\cs\app\Runtime\Cache\ae3f7b66fdb1feb547e984d698bc067c.php 第 21 行.
+NOTIC: [8] Undefined index: bm_id F:\xampp\htdocs\cs\app\Runtime\Cache\ae3f7b66fdb1feb547e984d698bc067c.php 第 21 行.
+NOTIC: [8] Undefined index: bm_id F:\xampp\htdocs\cs\app\Runtime\Cache\ae3f7b66fdb1feb547e984d698bc067c.php 第 21 行.
+NOTIC: [8] Undefined index: bm_id F:\xampp\htdocs\cs\app\Runtime\Cache\ae3f7b66fdb1feb547e984d698bc067c.php 第 21 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008487s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000575s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000536s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000744s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002883s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000782s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2014-03-15T10:32:58+08:00 ] 0.0.0.0 /cs/index.php/Admin/zy_show
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001368s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001529s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+NOTIC: [8] Constant THEME_NAME already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined F:\xampp\htdocs\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 8 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 12 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 13 行.
+NOTIC: [8] Undefined variable: data F:\xampp\htdocs\cs\app\Runtime\Cache\ac2dd5192295ac9c8a9463673a353090.php 第 15 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012590s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000633s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000616s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000573s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002579s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000611s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2014-03-15T10:33:00+08:00 ] 0.0.0.0 /cs/index.php/Admin/zy_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000772s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `zygl` [ RunTime:0.002097s ]
+SQL: SELECT * FROM `zygl`  [ RunTime:0.000390s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007814s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000430s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000427s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000309s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001719s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000604s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2014-03-15T10:33:03+08:00 ] 0.0.0.0 /cs/index.php/Admin/zy_update/id/5
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000757s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `zygl` [ RunTime:0.001854s ]
+SQL: SELECT * FROM `zygl` WHERE ( bm_id=5 )  [ RunTime:0.000552s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006841s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000620s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000463s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000346s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002126s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000612s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2014-03-15T10:33:05+08:00 ] 0.0.0.0 /cs/index.php/Admin/ks_show
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000754s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.002100s ]
+SQL: SELECT * FROM `kjj`  [ RunTime:0.000462s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 10 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 10 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 23 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 27 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 32 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 36 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 43 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 47 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 54 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 55 行.
+NOTIC: [8] Undefined variable: data1 F:\xampp\htdocs\cs\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 65 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.066096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066145s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000457s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000445s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000310s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001961s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000674s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2014-03-15T10:33:07+08:00 ] 0.0.0.0 /cs/index.php/Admin/ks_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000792s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.002205s ]
+SQL: SELECT * FROM `kshd`  [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.001915s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='35' ) LIMIT 1   [ RunTime:0.000647s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='37' ) LIMIT 1   [ RunTime:0.000490s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='37' ) LIMIT 1   [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009538s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000646s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000621s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000439s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002535s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000879s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2014-03-15T10:33:10+08:00 ] 0.0.0.0 /cs/index.php/Admin/ks_update/id/27
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001413s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.002223s ]
+SQL: SELECT * FROM `kshd` WHERE ( bm_id=27 )  [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.001871s ]
+SQL: SELECT * FROM `kjj`  [ RunTime:0.000431s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012258s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000613s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000593s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000428s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002451s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000840s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2014-03-15T10:33:13+08:00 ] 0.0.0.0 /cs/index.php/Admin/ks_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001651s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001799s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.002368s ]
+SQL: SELECT * FROM `kshd`  [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.002388s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='35' ) LIMIT 1   [ RunTime:0.000577s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='37' ) LIMIT 1   [ RunTime:0.000524s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='37' ) LIMIT 1   [ RunTime:0.000755s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008290s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000438s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000427s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001743s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000601s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2014-03-15T10:33:15+08:00 ] 0.0.0.0 /cs/index.php/Admin/ks_update/id/29
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001321s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001464s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.001878s ]
+SQL: SELECT * FROM `kshd` WHERE ( bm_id=29 )  [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.001975s ]
+SQL: SELECT * FROM `kjj`  [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011727s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000640s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000618s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000441s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002526s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000654s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000702s ]
+
+[ 2014-03-15T10:33:19+08:00 ] 0.0.0.0 /cs/index.php/Admin/ks_update_ac
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000778s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.002250s ]
+SQL: UPDATE `kshd` SET `kjj_id`=37,`ks_time`='2014-03-17',`k_time`='2014-03-11',`j_time`='2014-03-26',`on_off`='true' WHERE ( `bm_id` = 29 ) [ RunTime:0.074872s ]
+
+[ 2014-03-15T10:33:21+08:00 ] 0.0.0.0 /cs/index.php/Admin/ks_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001142s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.001812s ]
+SQL: SELECT * FROM `kshd`  [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.001964s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='35' ) LIMIT 1   [ RunTime:0.000337s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='37' ) LIMIT 1   [ RunTime:0.000224s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='37' ) LIMIT 1   [ RunTime:0.000223s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010518s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000623s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000612s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000436s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002497s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000915s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000979s ]
+

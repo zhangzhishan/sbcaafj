@@ -1,0 +1,78 @@
+<div class="my_show">
+<style>
+	.v3 div span{
+		border-bottom:1px solid #000;
+		width:130px;
+		display:block;
+		float:right;
+	}
+    .v3 div{
+		padding-left:50px;
+		font-size:16px;
+		margin:10px;
+		font-weight:800;
+		}
+	.v44{
+		width:127px;
+		height:177px;
+		border:1px solid #000;
+		line-height:127px;
+		
+		}
+	.v4{
+		float:right;
+		padding-right:100px;
+		font-size:16px;
+	
+		font-weight:800;
+		}
+				
+</style>
+
+ <volist name="data" id="vo">
+     <php>
+      if($name == ""){
+      echo  "<div style='text-align:center; padding-top:10%;'>";
+       $name="1";
+      }else{
+      $name="";
+     
+       echo "<div style='page-break-after: always;text-align:center; padding-top:10%;'>";
+      }
+     </php>
+	
+   		<div style="margin:auto; width:600px; height:400px; border:1px solid #000;">
+       		 <h2>中国美术学院美术等级考试</h2>
+        	<h1>准考证</h1>
+            <div  class="v3" style="text-align:left; width:300px; float:left;">
+            <div>姓&nbsp;&nbsp;&nbsp;&nbsp;名<span >&nbsp;{$vo.bm_name}&nbsp;</span></div>
+             <div>准考证号<span>&nbsp;{$vo.bm_cell}&nbsp;</span></div>
+              <div>报考科目<span>&nbsp;{$vo.bm_zy}&nbsp;</span></div>
+              <div>报考级别<span>&nbsp;{$vo.bm_level}&nbsp;</span></div>
+              <div>考试时间<span>&nbsp;{$vo.kshd.ks_time}&nbsp;</span></div>
+               <div>考试地点<span style=" border-bottom:1px solid #000;">{$vo.bm_kjj}</span></div>
+             </div>  
+               <div class="v4">
+               		<div class="v44" style="width:127px;height:177px;border:1px solid #000;line-height:127px;">照片</div>
+                    中国美术学院<br />
+                    社会美术考级中心
+               </div>
+	       <img src="__PUBLIC__/images/b77.png" style="width:230px; position: relative;top:-145px;left:95px;">
+        </div>
+    </div> 
+ </volist>   
+   
+
+</div>
+<input type="button" style=" text-align:center; margin:auto;" class="btn btn-default"  onclick=" dy()" value="打印"/>
+</div>
+<script>
+  var ry="{$data.bm_csdate}";
+    ry=ry.split("-");
+	$("#rq").html(ry[0]+"年"+ry[1]+"月"+ry[2]+"日");
+	
+  	function  dy(){ 
+			$(".my_show").jqprint( ); 
+		}
+	
+</script>        		

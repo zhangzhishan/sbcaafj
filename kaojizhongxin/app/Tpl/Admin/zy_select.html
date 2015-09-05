@@ -1,0 +1,32 @@
+<script>
+	
+</script>
+<div class="row">
+<div id="cb_add" class="col-sm-8 col-sm-offset-2">
+	<table class="table table-striped">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>名称</th>
+            <th>专业编号</th>
+            <th>添加时间</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <volist name="data" id="vo">
+           <tr>
+            <td>{$vo.bm_id}</td>
+            <td>{$vo.bm_name}</td>
+            <td>{$vo.bm_bm}</td>
+            <td>{$vo.bm_time}</td>
+            <td>
+            <button onclick="bm_dele({$vo.bm_id},'Zygl')" type="button" class="btn btn-default">删除</button>
+            <button onClick="bm_load('zy_update/id/{$vo.bm_id}')"  type="button" class="btn btn-default">修改</button>
+            </td>
+          </tr>
+    	  </volist>
+        </tbody>
+      </table>
+</div>
+</div>

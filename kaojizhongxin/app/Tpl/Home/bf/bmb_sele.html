@@ -1,0 +1,272 @@
+<form role="form" >
+	<div class="form-group row" style="margin-top:20px;" >
+    <div class="col-sm-12 col-sm-offset-1">
+    	<label for="exampleInputEmail1">考生报名表</label>
+    </div>
+    </div>
+	<div class="form-group row" >
+   
+        <div class="col-sm-4 col-sm-offset-1">
+        	<label for="exampleInputEmail1">姓名</label>
+            <input type="text" name="bm_name"  id="bm_name" class="form-control"   value="{$data3.bm_name}"  placeholder="" >
+        </div>
+        <div class="col-sm-4 ">
+        	<label for="exampleInputEmail1">拼音<small>&nbsp;(例：王方一，请输入Wang Fang Yi)</small></label>
+            <input type="text" name="bm_py"  id="bm_py"  value="{$data3.bm_py}" class="form-control" placeholder="" >
+        </div>
+         <div class="col-sm-2 ">
+        	<label for="exampleInputEmail1">性别</label>
+            <select class="form-control" id="bm_sex">
+            		  	<option value="0" <eq name="data3['bm_sex']" value="0">selected</eq> >男 </option>
+                        <option value="1" <eq name="data3['bm_sex']" value="1">selected</eq> >女</option> 					
+			</select> 
+        </div>
+     </div>
+     <div class="form-group row">
+        <div class="col-sm-4 col-sm-offset-1">
+        	<label  for="exampleInputEmail1">出生日期</label>
+             <div class="input-group date form_date " data-date="" data-date-format="yyyy-mm-dd" data-link-field="bm_csdate" data-link-format="yyyy-mm-dd">
+                    <input class="form-control" size="16" type="text" value="{$data3.bm_csdate}" readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div>
+				<input type="hidden" id="bm_csdate" value="{$data3.bm_csdate}" />
+         </div>
+         
+         <div class="col-sm-3 ">
+        	<label for="exampleInputEmail1">国籍</label>
+            	<input type="text" name="bm_mail"  id="bm_mail" class="form-control" value="{$data3.bm_mail|default="中国"}" placeholder="" >
+        </div>
+        
+         <div class="col-sm-3 ">
+        	<label for="exampleInputEmail1">民族</label>
+           
+            <select name="bm_mz" class="form-control" id="bm_mz" >
+            		  <volist name="arr1" id="vo">
+  						<option value="{$vo}"  <eq name="data3['bm_mz']" value="$vo">selected</eq>>{$vo}</option>
+ 					</volist>					
+			</select> 
+            
+        </div>
+        
+        
+      </div>
+    
+      <div class="form-group row">
+      		
+             
+                 <div class="col-sm-4 col-sm-offset-1 ">
+                 <label for="exampleInputEmail1">地址填写------市</label>
+              
+                
+                     <select name="c55" class="form-control" id="c55" >
+                     	
+                     </select>
+                  
+                     
+                 </div>
+                  
+                  <div class="col-sm-3">
+                    <label for="exampleInputEmail1">区</label>
+                     <select name="c66" class="form-control" id="c66" >
+                     	
+                     </select>
+                    
+                     
+                 </div>
+                 <div class="col-sm-3">
+                    <label for="exampleInputEmail1">县</label>
+                    <select name="c77" class="form-control" id="c77" >
+                     	
+                     </select>
+                    
+                 </div>
+        	
+      </div>
+      <div class="form-group row">
+      		 <div class="col-sm-3 col-sm-offset-1">
+        	<label for="exampleInputEmail1">报考专业</label>
+             <select class="form-control" id="bm_zy">
+            		  <volist name="data" id="vo">
+  						<option value="{$vo.bm_id}|{$vo.bm_name}"  <eq name="data3['bm_zy_id']" value="$vo.bm_id">selected</eq>>{$vo.bm_name}</option>
+ 					</volist>					
+				</select> 
+             </div>
+             <div class="col-sm-2 ">
+        	<label for="exampleInputEmail1">报考级别</label>
+            <select class="form-control" id="bm_level">
+
+
+            		  	<for start="1" end="10">
+                        
+ 								<option value="{$i}"  <eq name="data3['bm_level']" value="$i">selected</eq> >{$i} </option>
+                         		 
+							 </if>	
+							
+						 </for>
+                     				
+				</select> 
+        	</div>
+             <div class="col-sm-2 ">
+        	<label for="exampleInputEmail1">已过级别</label>
+            <select class="form-control" id="bm_ylevel">
+            			<option value="0">无</option>
+            		  	 	<for start="1" end="9">
+                        
+ 								<option value="{$i}"  <eq name="data3['bm_ylevel']" value="$i">selected</eq> >{$i} </option>
+                         		 
+							 </if>	
+							
+						 </for> 					
+				</select> 
+        	</div>
+             <div class="col-sm-3 ">
+        	<label for="exampleInputEmail1">考试地点</label>
+            <input type="text" name="bm_name"  id="bm_kjj" class="form-control" placeholder="" value="{$data1[0].bm_name}" readonly>
+            <input type="hidden" id="bm_kjj_id" value="{$data1[0].bm_id}">
+            <input type="hidden" id="bm_bm" value="{$data2}">
+            <input type="hidden" id="kshd_id" value="{$data4[0].bm_id}">
+            <button style="float:right; margin-top:10px;" type="button" onclick="bm_add1('kshd_qr','ks_select')" class="btn btn-default">报名</button>
+        </div> 
+       
+      </div>
+       
+  
+</form>        
+<script>
+     var c11,c22,c33,c44,c55,c66,c77,config1;
+	 c22=[];c33=[];c44=[];
+	 c55="";c66="";c77="";
+	 config1=[['0-2','0-4','0-5'],['3-3','5-10','6-0'],['4-7','11-14','6-10'],['8-8','15-18','11-11'],['9-10','19-20','12-20'],['11-12','21-22','21-28'],['13-17','23-23','29-33'],['18-19','24-24','34-38'],['20-22','25-26','39-44']];
+	 $('.form_date').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0
+    });
+	c11="福州市,鼓楼区,台江区,仓山区,马尾区,晋安区,福清市,长乐市,闽侯县,连江县,罗源县,闽清县,永泰县,平潭县,厦门市,思明区,海沧区,湖里区,集美区,同安区,翔安区,泉州市,丰泽区,鲤城区,洛江区,泉港区,石狮市,晋江市,南安市,惠安县,安溪县,永春县,德化县,金门县,莆田市,城厢区,涵江区,荔城区,秀屿区,仙游县,三明市,梅列区,三元区,永安市,明溪县,清流县,宁化县,大田县,尤溪县,沙县,将乐县,泰宁县,建宁县,漳州市,芗城区,龙文区,龙海市,云霄县,漳浦县,诏安县,长泰县,东山县,南靖县,平和县,华安县,南平市,延平区,邵武市,武夷山市,建瓯市,建阳市,顺昌县,浦城县,光泽县,松溪县,政和县,龙岩市,新罗区,漳平市,长汀县,永定县,上杭县,武平县,连城县,宁德市,焦城区,东桥新区,福安市,福鼎市,霞浦县,古田县,屏南县,寿宁县,周宁县,柘荣县";
+	c11=c11.split(",");
+	
+	for (var i=0;i<c11.length;i++){
+			if(/^.+市$/gi.test(c11[i])){
+				c22.push(c11[i]);
+			}else if(/^.+区$/gi.test(c11[i])){
+				c33.push(c11[i]);
+			}else if(/^.+县$/gi.test(c11[i])){
+				c44.push(c11[i]);
+			}
+		}
+		
+	for(var i=0;i<c22.length;i++){
+		 c55+="<option  value='"+c22[i]+"|"+i+"'> "+c22[i]+"</option>";
+		}
+	$("#c55").html(c55);
+		
+	  //点击去考点名称值
+  sel_show($("#c55").val().split("|")[1]);   
+  $("#c55").change(function(){ 
+		 //alert($(this).val().split("|")[1]);
+		//alert(config1.length);
+		sel_show($(this).val().split("|")[1]);
+  });
+  //报考专业 变换
+    $("#bm_zy").change(function(){ 
+	    
+		//return;
+		var che1="",che2="<option value='0'>无</option>";
+		if($(this).val().split("|")[1]=="儿童画（水粉）" || $(this).val().split("|")[1]==" 儿童画（素描）"){
+			 for(var i=0;i<4;i++)
+			 {  //alert("1111");
+			// alert($.trim($(this).val().split("|")[1]));
+				 che1+="<option value='"+(i+1)+"'>"+(i+1)+"</option>\n";
+				if(i!=3){
+				 che2+="<option value='"+(i+1)+"'>"+(i+1)+"</option>\n";
+				 
+					}
+				 
+				 }
+			 $("#bm_level").html(che1);
+			 $("#bm_ylevel").html(che2);
+		}else if($(this).val().split("|")[1]==" 速写" ){
+			
+			 for(var i=5;i<10;i++)
+			 {
+				 che1+="<option value='"+(i)+"'>"+(i)+"</option>\n";
+				if(i==9){
+						for(var ii=1;ii<9;ii++){
+				 			che2+="<option value='"+(ii)+"'>"+(ii)+"</option>\n";
+						}
+					}
+				 
+				 }
+			 $("#bm_level").html(che1);
+			 $("#bm_ylevel").html(che2);
+			
+			
+			}else 	if($(this).val().split("|")[1]==" 儿童画（速写）"){
+			 for(var i=0;i<4;i++)
+			 {  //alert("1111");
+			// alert($.trim($(this).val().split("|")[1]));
+				 che1+="<option value='"+(i+1)+"'>"+(i+1)+"</option>\n";
+				if(i!=3){
+				 che2+="<option value='"+(i+1)+"'>"+(i+1)+"</option>\n";
+				 
+					}
+				 
+				 }
+			 $("#bm_level").html(che1);
+			 $("#bm_ylevel").html(che2);
+		   }else{
+				
+				for(var i=1;i<10;i++)
+			 {
+				 che1+="<option value='"+(i)+"'>"+(i)+"</option>\n";
+				if(i!=9){
+				 che2+="<option value='"+(i)+"'>"+(i)+"</option>\n";
+				 
+					}
+				 
+				 }
+			 $("#bm_level").html(che1);
+			 $("#bm_ylevel").html(che2);
+				}
+  });
+  function sel_show(id){
+	    c66="";
+		c77="";
+		c66+="<option  value='0'> 无</option>";	
+		c77+="<option  value='0'> 无</option>";	
+		$("#c66").html(c66);
+		$("#c77").html(c77);
+		
+			//alert(id);
+	   //alert((config1[0][0]).splice("|")[0]);		
+	  for(var i=0;i<config1.length;i++){
+		   var h1=config1[i];h2=h1[0];h3=h1[1];h4=h1[2];
+		      id=Number(id);
+		    //alert(typeof(Number(h2.split("-")[0])));
+		 if(  id>=h2.split("-")[0]  &&  id<=h2.split("-")[1] ){
+			      //alert(h3.split("-")[0]+ " "+h3.split("-")[1] );
+			 	//alert(h2.split("-")[0]+"  "+h2.split("-")[1]);
+			  	for(var i= Number(h3.split("-")[0]);i<=h3.split("-")[1];i++){
+					 //alert("111");
+					 c66+="<option  value='"+c33[i]+"|"+i+"'> "+c33[i]+"</option>";	
+					}
+				for(var i= Number(h4.split("-")[0]);i<=h4.split("-")[1];i++){
+					 c77+="<option  value='"+c44[i]+"|"+i+"'> "+c44[i]+"</option>";	
+					}	
+				$("#c66").html(c66);
+				$("#c77").html(c77);
+				
+				return;	
+			 
+			}
+		
+		  }
+		 
+	  }
+</script>        		

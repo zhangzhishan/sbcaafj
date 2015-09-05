@@ -1,0 +1,920 @@
+[ 2014-03-23T03:33:16+08:00 ] 14.17.34.190 /wwzz/gjyphp/xmyk/index.php/Home
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.169492s ]
+INFO: [ route_check ] --END-- [ RunTime:0.169582s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.103345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.103419s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:1.290836s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.290927s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.056925s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.071957s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.116864s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.098907s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.344821s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.184791s ]
+INFO: [ view_end ] --END-- [ RunTime:0.184863s ]
+
+[ 2014-03-23T03:33:16+08:00 ] 14.17.34.182 /wwzz/gjyphp/xmyk/index.php/Admin/index/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.169494s ]
+INFO: [ route_check ] --END-- [ RunTime:0.169580s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.103335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.103402s ]
+NOTIC: [8] Undefined index:  username D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 27 行.
+NOTIC: [8] Undefined index:  password D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.319835s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="d41d8cd98f00b204e9800998ecf8427e" )  [ RunTime:0.000194s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.210333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.210426s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000873s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000841s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.053325s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.098903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.154110s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.184795s ]
+INFO: [ view_end ] --END-- [ RunTime:0.184864s ]
+
+[ 2014-03-23T03:33:20+08:00 ] 119.147.146.192 /wwzz/gjyphp/xmyk/index.php/home
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001154s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001220s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+ERR: 无法加载模块:home
+
+[ 2014-03-23T03:35:59+08:00 ] 14.17.34.190 /wwzz/gjyphp/xmyk/index.php/Home/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001927s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002028s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015020s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001424s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001412s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001271s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005857s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001697s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001779s ]
+
+[ 2014-03-23T03:36:59+08:00 ] 14.17.34.182 /wwzz/gjyphp/xmyk/index.php/Admin/index/action/1/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001929s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+NOTIC: [8] Undefined index:  username D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 27 行.
+NOTIC: [8] Undefined index:  password D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.001158s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="d41d8cd98f00b204e9800998ecf8427e" )  [ RunTime:0.000189s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015328s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001305s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001297s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001163s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005423s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001581s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001663s ]
+
+[ 2014-03-23T23:10:17+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Home
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.227634s ]
+INFO: [ route_check ] --END-- [ RunTime:0.227721s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.109760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.109834s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.823930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.824030s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.057196s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.063649s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.116820s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.107335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.345186s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.106088s ]
+INFO: [ view_end ] --END-- [ RunTime:0.106171s ]
+
+[ 2014-03-23T23:10:22+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001212s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+NOTIC: [8] Undefined index:  action D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.172605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.172681s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000908s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000895s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000714s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003542s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001014s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2014-03-23T23:11:12+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001179s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.144883s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="21nic" AND password="880d45eb62d70418dff7bade4488f0a3" )  [ RunTime:0.000207s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.245306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.245390s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000943s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000851s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000738s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003593s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001215s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001268s ]
+
+[ 2014-03-23T23:14:55+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Home
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001013s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012927s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000824s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000814s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000716s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003373s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001040s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001093s ]
+
+[ 2014-03-23T23:14:56+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001165s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index:  action D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013480s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000812s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000817s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000727s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003381s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001149s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2014-03-23T23:15:07+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001143s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.000935s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="21nic" AND password="880d45eb62d70418dff7bade4488f0a3" )  [ RunTime:0.000073s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011627s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000873s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000813s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000713s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003415s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001053s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001105s ]
+
+[ 2014-03-23T23:15:23+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/bm_admin_show
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001138s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.073107s ]
+SQL: SELECT * FROM `kjj`  [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.230274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.230340s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000810s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000809s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000717s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003326s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001013s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2014-03-23T23:16:00+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Home/kshd_sele
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001175s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.089487s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.000758s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `kjj` WHERE ( bm_bm=081021 )  [ RunTime:0.000156s ]
+SQL: SELECT * FROM `kshd` WHERE ( kjj_id=39 and k_time<='2014-03-23' and j_time>='2014-03-23' and on_off='true'  )  [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `zygl` [ RunTime:0.152811s ]
+SQL: SELECT * FROM `zygl`  [ RunTime:0.000179s ]
+NOTIC: 建议使用I方法替代_post
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  bm_name D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 11 行.
+NOTIC: [8] Undefined index:  bm_py D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 15 行.
+NOTIC: [8] Undefined index:  bm_sex D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 20 行.
+NOTIC: [8] Undefined index:  bm_sex D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 21 行.
+NOTIC: [8] Undefined index:  bm_csdate D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 29 行.
+NOTIC: [8] Undefined index:  bm_csdate D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 33 行.
+NOTIC: [8] Undefined index:  bm_cell D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 38 行.
+NOTIC: [8] Undefined index:  bm_mz D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 43 行.
+NOTIC: [8] Undefined index:  bm_mail D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 52 行.
+NOTIC: [8] Undefined index:  bm_add D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 56 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.241200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.241256s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000838s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000820s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000793s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000914s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003487s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001005s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2014-03-23T23:16:26+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/ks_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001149s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.000783s ]
+SQL: SELECT * FROM `kshd`  [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.000621s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='39' ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='40' ) LIMIT 1   [ RunTime:0.000133s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='43' ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='44' ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='43' ) LIMIT 1   [ RunTime:0.000073s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.149268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149338s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000932s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000821s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000725s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000889s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003489s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000996s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2014-03-23T23:16:29+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/bm_admin_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001251s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001320s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.000776s ]
+SQL: SELECT * FROM `bm_admin`  [ RunTime:0.000209s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.177952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.178021s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000819s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000809s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000717s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003342s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000981s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2014-03-23T23:16:39+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/ks_show
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001265s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.000789s ]
+SQL: SELECT * FROM `kjj`  [ RunTime:0.000204s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 10 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 10 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 10 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 10 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 10 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 10 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 23 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 27 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 32 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 36 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 43 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 47 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 54 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 55 行.
+NOTIC: [8] Undefined variable: data1 D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\8faa5a1bbd35c1d5c8fe4769dc153b2a.php 第 65 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.100290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100343s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000804s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000810s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000780s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000890s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003404s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001010s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001055s ]
+
+[ 2014-03-23T23:16:48+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/ks_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001180s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.000771s ]
+SQL: SELECT * FROM `kshd`  [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.000655s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='39' ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='40' ) LIMIT 1   [ RunTime:0.000075s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='43' ) LIMIT 1   [ RunTime:0.000080s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='44' ) LIMIT 1   [ RunTime:0.000073s ]
+SQL: SELECT * FROM `kjj` WHERE ( 1=1 AND bm_id='43' ) LIMIT 1   [ RunTime:0.000067s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009946s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000815s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000831s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000737s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003401s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001010s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2014-03-23T23:20:02+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Home/kshd_qr
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001153s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+NOTIC: 建议使用I方法替代_post
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.181560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.181639s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000880s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000857s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000876s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003765s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001219s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001267s ]
+
+[ 2014-03-23T23:20:15+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Home/kshd_dy
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001177s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `ksbm` [ RunTime:0.076016s ]
+SQL: INSERT INTO `ksbm` (`bm_name`,`bm_py`,`bm_sex`,`bm_csdate`,`bm_mz`,`bm_cell`,`bm_mail`,`bm_add`,`bm_zy_id`,`bm_zy`,`bm_level`,`bm_ylevel`,`bm_kjj_id`,`bm_kjj`,`bm_time`) VALUES ('程谭心韵','ChengTanXinYun','1','2008-12-29','哈沙科是他','123562123','ajske_asdf@hotmail.com','阿嫂地方啊所担负阿嫂地方啊所担负','9','中国人物画','1','0','39','新空间艺仙美术培训学校','2014-03-23') [ RunTime:0.842506s ]
+NOTIC: 建议使用I方法替代_post
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.131949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132024s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000818s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000827s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000787s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003518s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001010s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2014-03-23T23:20:37+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/ksbm_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001165s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001230s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.000771s ]
+SQL: SELECT * FROM `kjj`  [ RunTime:0.000162s ]
+SQL: SHOW COLUMNS FROM `zygl` [ RunTime:0.000589s ]
+SQL: SELECT * FROM `zygl`  [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `ksbm` [ RunTime:0.000781s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ksbm` WHERE (  id<>0  ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT * FROM `ksbm` WHERE (  id<>0  ) ORDER BY bm_time LIMIT 0,30   [ RunTime:0.000205s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.126874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126949s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000847s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000856s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000720s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003472s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001010s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2014-03-23T23:20:51+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/ksbm_update/id/63
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001155s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+SQL: SHOW COLUMNS FROM `zygl` [ RunTime:0.000749s ]
+SQL: SELECT * FROM `zygl`  [ RunTime:0.000140s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `ksbm` [ RunTime:0.000773s ]
+SQL: SELECT * FROM `ksbm` WHERE ( id=63 )  [ RunTime:0.000197s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.000615s ]
+SQL: SELECT * FROM `kjj` WHERE ( bm_id=39 )  [ RunTime:0.000177s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.152298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152366s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000824s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000810s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000729s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003369s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2014-03-23T23:21:43+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/kshd_update_ac
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001241s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `ksbm` [ RunTime:0.000894s ]
+SQL: UPDATE `ksbm` SET `bm_name`='程谭心韵',`bm_py`='ChengTanXinYun',`bm_sex`='1',`bm_csdate`='2008-12-29',`bm_mz`='哈沙科是他',`bm_cell`='123562123',`bm_mail`='ajske_asdf@hotmail.com',`bm_add`='福建省泉州厦门',`bm_zy_id`='9',`bm_zy`='中国人物画',`bm_level`='1',`bm_ylevel`='0',`bm_kjj_id`='39',`bm_kjj`='新空间艺仙美术培训学校' WHERE ( `id` = '63' ) [ RunTime:0.143423s ]
+
+[ 2014-03-23T23:21:45+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Admin/ksbm_select
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001157s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.000762s ]
+SQL: SELECT * FROM `kjj`  [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `zygl` [ RunTime:0.000600s ]
+SQL: SELECT * FROM `zygl`  [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `ksbm` [ RunTime:0.000784s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ksbm` WHERE (  id<>0  ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SELECT * FROM `ksbm` WHERE (  id<>0  ) ORDER BY bm_time LIMIT 0,30   [ RunTime:0.000265s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014348s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000827s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000811s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000713s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003352s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2014-03-23T23:22:36+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Home/kshd_sele
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000934s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.000634s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `kjj` WHERE ( bm_bm=081021 )  [ RunTime:0.000081s ]
+SQL: SELECT * FROM `kshd` WHERE ( kjj_id=39 and k_time<='2014-03-23' and j_time>='2014-03-23' and on_off='true'  )  [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `zygl` [ RunTime:0.000593s ]
+SQL: SELECT * FROM `zygl`  [ RunTime:0.000165s ]
+NOTIC: 建议使用I方法替代_post
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  bm_name D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 11 行.
+NOTIC: [8] Undefined index:  bm_py D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 15 行.
+NOTIC: [8] Undefined index:  bm_sex D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 20 行.
+NOTIC: [8] Undefined index:  bm_sex D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 21 行.
+NOTIC: [8] Undefined index:  bm_csdate D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 29 行.
+NOTIC: [8] Undefined index:  bm_csdate D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 33 行.
+NOTIC: [8] Undefined index:  bm_cell D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 38 行.
+NOTIC: [8] Undefined index:  bm_mz D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 43 行.
+NOTIC: [8] Undefined index:  bm_mail D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 52 行.
+NOTIC: [8] Undefined index:  bm_add D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 56 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_zy_id D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 63 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_level D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 69 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+NOTIC: [8] Undefined index:  bm_ylevel D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\fa643365b98d76a88a7ca717e9966187.php 第 79 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013500s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000818s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000812s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000726s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003360s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001013s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2014-03-23T23:34:55+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Home/kshd_qr
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001275s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+NOTIC: 建议使用I方法替代_post
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010382s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000899s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000957s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000802s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003757s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001086s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001128s ]
+
+[ 2014-03-23T23:35:05+08:00 ] 83.100.228.84 /wwzz/gjyphp/xmyk/index.php/Home/kshd_sele
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000927s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `kshd` [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `kjj` [ RunTime:0.000638s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `kjj` WHERE ( bm_bm=081021 )  [ RunTime:0.000140s ]
+SQL: SELECT * FROM `kshd` WHERE ( kjj_id=39 and k_time<='2014-03-23' and j_time>='2014-03-23' and on_off='true'  )  [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `zygl` [ RunTime:0.000607s ]
+SQL: SELECT * FROM `zygl`  [ RunTime:0.000191s ]
+NOTIC: 建议使用I方法替代_post
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012088s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000818s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000814s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000732s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003388s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001032s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2014-03-23T23:40:11+08:00 ] 101.226.33.200 /wwzz/gjyphp/xmyk/index.php/Home
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001210s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.158492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.158575s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000847s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000820s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000728s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000909s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003439s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001019s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2014-03-23T23:40:21+08:00 ] 222.73.76.253 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001145s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+NOTIC: [8] Undefined index:  action D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.149517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149576s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000810s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000806s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000716s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003346s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001015s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2014-03-23T23:41:10+08:00 ] 101.226.89.123 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit/action/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000981s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8] Undefined index:  username D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 27 行.
+NOTIC: [8] Undefined index:  password D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.000774s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="d41d8cd98f00b204e9800998ecf8427e" )  [ RunTime:0.000227s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010299s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000890s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000872s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000800s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003653s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001088s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2014-03-23T23:42:42+08:00 ] 101.226.33.200 /wwzz/gjyphp/xmyk/index.php/Home/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000829s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009441s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000847s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000827s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000739s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003449s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001018s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2014-03-23T23:42:59+08:00 ] 101.226.89.123 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit/action/1/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001145s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+NOTIC: [8] Undefined index:  username D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 27 行.
+NOTIC: [8] Undefined index:  password D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.000749s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="d41d8cd98f00b204e9800998ecf8427e" )  [ RunTime:0.000122s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009763s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000807s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000809s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000726s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003409s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001008s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2014-03-23T23:44:45+08:00 ] 222.73.76.253 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000971s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+NOTIC: [8] Undefined index:  action D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010665s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000866s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000877s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000770s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003653s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001127s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001180s ]
+
+[ 2014-03-23T23:44:50+08:00 ] 101.226.89.123 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit/action/1/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001162s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+NOTIC: [8] Undefined index:  username D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 27 行.
+NOTIC: [8] Undefined index:  password D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.092457s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="d41d8cd98f00b204e9800998ecf8427e" )  [ RunTime:0.000086s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010452s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000823s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000806s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000721s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003367s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000997s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001048s ]
+
+[ 2014-03-23T23:45:27+08:00 ] 101.226.33.200 /wwzz/gjyphp/xmyk/index.php/Home/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001196s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010136s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000973s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000946s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000819s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003853s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001104s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001160s ]
+
+[ 2014-03-23T23:46:24+08:00 ] 101.226.89.123 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit/action/1/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001167s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+NOTIC: [8] Undefined index:  username D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 27 行.
+NOTIC: [8] Undefined index:  password D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.000773s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="d41d8cd98f00b204e9800998ecf8427e" )  [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009702s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000816s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000814s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000723s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003374s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001055s ]
+
+[ 2014-03-23T23:47:59+08:00 ] 101.226.89.123 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit/action/1/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001033s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+NOTIC: [8] Undefined index:  username D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 27 行.
+NOTIC: [8] Undefined index:  password D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `bm_admin` [ RunTime:0.000761s ]
+SQL: SELECT * FROM `bm_admin` WHERE ( name="" AND password="d41d8cd98f00b204e9800998ecf8427e" )  [ RunTime:0.000122s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009750s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000815s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000872s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000759s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000933s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003515s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001010s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001061s ]
+
+[ 2014-03-23T23:49:02+08:00 ] 222.73.76.253 /wwzz/gjyphp/xmyk/index.php/Admin/bm_quit/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000789s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+NOTIC: [8] Undefined index:  action D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009943s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000889s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000864s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003618s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001154s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001206s ]
+

@@ -1,0 +1,257 @@
+<div style="width:210mm; height:297mm">
+
+<script>
+// var ctx = canvas.getContext('2d');
+// ctx.clearRect( 0 , 0 , canvas.width, canvas.height );
+// ctx.fillStyle="#FFFFFF"; 
+// ctx.fillRect(0 , 0 , canvas.width, canvas.height);
+var ry = $('#date').html();
+ry = ry.split("-");
+$("#rq").html(ry[0] + "年" + ry[1] + "月" + ry[2] + "日");
+
+
+var options = {
+         pagesplit: true
+    };
+    function ff(a){
+      if (a >= 10) {
+        return;
+      };
+      a = a + 1;
+      console.log(a);
+      ff(a);
+      
+    };
+
+    function printbypage(pdf, k){
+      if(k >= $('.my_show').length)
+      {
+        // pdf.output('dataurlnewwindow');
+        pdf.save('准考证.pdf');
+      }
+      pdf.addHTML($('.my_show')[k], function(){
+        if(k < $('.my_show').length - 1)
+        {
+          pdf.addPage();
+        }
+        
+        printbypage(pdf, k + 1);
+      });
+    };
+
+function dy() {
+
+  var pdf = new jsPDF('p', 'mm', 'a4');
+    // var print_content = $('.my_show');
+    // var filename = '准考证.pdf';
+    // var page = print_content.length;
+    printbypage(pdf, 0);
+    
+
+};
+    
+
+    // });
+
+// function  dy(){ 
+</script>
+    <style>
+    td {
+        height: 9mm;
+    }
+    #print_contetn{
+      background-color: #fff;
+      width: 210mm;
+        height: 297mm;
+    }
+    .my_show {
+        background-color: #fff;
+        width: 210mm;
+        height: 297mm;
+    }
+    
+    .g4 {
+        width: 142mm;
+        /*margin: auto;*/
+    }
+    
+    .t1 {
+        text-align: center;
+        vertical-align: central;
+        width: 142mm;
+        margin: auto;
+    }
+    
+    body {
+        background-color: #fff;
+    }
+    
+    table,
+    tr,
+    td {
+        border-color: #000;
+    }
+    
+    .row {
+        margin: 0 auto;
+    }
+    
+    .row {
+        margin-right: none;
+        margin-left: none;
+    }
+    
+    .body_sb {
+        font-size: 16px;
+    }
+    
+    .body_sb td {
+        font-size: 15px;
+    }
+    
+    .g4 {
+        line-height: 25px;
+    }
+    
+    .v3 div span {
+        border-bottom: 1px solid #000;
+        width: 130px;
+        display: block;
+        float: right;
+    }
+    
+    .v3 div {
+        padding-left: 50px;
+        font-size: 16px;
+        margin: 10px;
+        font-weight: 800;
+    }
+    
+    .v44 {
+        width: 25mm;
+        height: 36mm;
+        border: 1px solid #000;
+        line-height: 25mm;
+    }
+    
+    .v4 {
+        float: right;
+        padding-right: 80px;
+        padding-top: 20px;
+        font-size: 16px;
+        font-weight: 800;
+    }
+    </style>
+    
+<volist name="data" id="vo">
+    <div id="print_content{$vo.id}" class="my_show" >
+    <div class="body_sb" style="text-align:center;">
+        <img id="lunbo_1" src="__PUBLIC__/images/b1.jpg" width="400">
+    </div>
+    <!-- <div class="row body_sb" style="margin-top:30px;"> -->
+    <div class="row body_sb" >
+
+        <!-- <div class="col-sm-6 col-sm-offset-3"> -->
+            <table class="t1" style="border-collapse:collapse" border="1">
+                <tr>
+                    <td colspan="2" style="width:26mm; height=36mm " rowspan="4">
+                        照片
+                        <br/> 1寸
+                    </td>
+                    <td>姓名：</td>
+                    <td colspan="2">{$vo.bm_name}</td>
+                    <td>&nbsp;&nbsp;拼音：</td>
+                    <td colspan="2">{$vo.bm_py}</td>
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td>
+                        &nbsp; &nbsp; {$vo['bm_sex']==0?'男':'女'} &nbsp; &nbsp; &nbsp;
+                    </td>
+                    <td colspan="1">国籍：</td>
+                    <td colspan="1">{$vo.bm_mail}</td>
+                    <td colspan="1" style="width:78px;">民族：</td>
+                    <td colspan="" style="width:75px;">{$vo.bm_mz}</td>
+                </tr>
+                <tr>
+                    <td colspan="1">出生日期：</td>
+                    <td colspan="5" id="rq"></td>
+                </tr>
+                <tr>
+                    <td colspan="1">所属地区：</td>
+                    <td colspan="5">{$vo.bm_add}</td>
+                </tr>
+                <tr>
+                    <td colspan="2">报考专业</td>
+                    <td colspan="2">{$vo.bm_zy}</td>
+                    <td>报考级别</td>
+                    <td>{$vo.bm_level}</td>
+                    <td>原有级别：</td>
+                    <td>{$vo.bm_ylevel}</td>
+                </tr>
+                <tr>
+                    <td colspan="2">是否制作</td>
+                    <td colspan="6">
+                        {$vo['bm_fj']==1?'制作':'不制作'}
+                    </td>
+                </tr>
+                <td colspan="8" rowspan="3" style="text-align:left;">
+                    <div class="g4" style="padding:10px 10px;">
+                        1、如考生填报两个以上专业，需另填报名表。
+                        <br/> 2、本表系录入文化部数据库的依据，请考生务必如实填写。
+                        <br/> 3、一经报名，不得退考、更改考试科目、报考级别。
+                        <br/> 4、因考生本人原因缺考视为自动弃权，恕不退费和补考。
+                        <p id="date" style="display:none;" >{$vo.bm_csdate}</p>
+                        <br /> 5、附：近期同底正面免冠 1 寸照片三张，照片背后需写上考生姓名。
+                    </div>
+                </td>
+                </tr>
+            </table>
+            <div style="margin-left:20mm;">
+            </div>
+        </div>
+    <!-- </div> -->
+    <!-- <span style="border:1px dashed #999999 ;"></span> -->
+    <hr style="border:1px dashed #999999">
+
+ 
+    
+     <php>
+      if($name == ""){
+      echo  "<div style='text-align:center; '>";
+       $name="1";
+      }else{
+      $name="";
+     
+       echo "<div style='page-break-after: always;text-align:center;'>";
+      }
+     </php>
+  
+      <div style="margin:auto; width: 148mm;; height:538px; border:1px solid #000;">
+           <h2>中国美术学院美术等级考试</h2>
+          <h1>准考证</h1>
+          <div style="padding:70px 1px">\
+            <div  class="v3" style="text-align:left; width:300px; float:left;">
+            <div>姓&nbsp;&nbsp;&nbsp;&nbsp;名<span >&nbsp;{$vo.bm_name}&nbsp;</span></div>
+             <div>准考证号<span>&nbsp;{$vo.bm_cell}&nbsp;</span></div>
+              <div>报考科目<span>&nbsp;{$vo.bm_zy}&nbsp;</span></div>
+              <div>报考级别<span>&nbsp;{$vo.bm_level}&nbsp;</span></div>
+              <div>考试时间<span>&nbsp;{$vo.kshd.ks_time}&nbsp;</span></div>
+               <div>考试地点<span style=" border-bottom:1px solid #000;">{$vo.bm_kjj}</span></div>
+             </div>  
+               <div class="v4" style="padding-left: 20px">
+                  <div class="v44" style="width:26mm;height:36mm;border:1px solid #000;line-height:127px;margin:0 2px;">照片</div>
+                    中国美术学院<br />
+                    社会美术考级中心
+               </div>
+           <img src="__PUBLIC__/images/b77.png" style="width: 170px; position: relative;top: -120px;left: -30%;">
+
+        </div>
+          </div>
+            
+    </div> 
+    </div>
+ </volist>   
+</div>
+<input type="button" style="text-align:center; margin:auto;" class="btn btn-default" onclick="dy()" value="打印" />
+

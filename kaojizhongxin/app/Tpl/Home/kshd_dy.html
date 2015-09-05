@@ -1,0 +1,156 @@
+
+<div class="my_show"> 
+
+
+ <link rel="stylesheet" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+ <script src="__PUBLIC__/js/respond.min.js"></script>
+<style>
+
+	td{
+		height:11mm;
+		
+	}
+	.g4{
+		width:142mm;
+		margin:auto;
+		}
+	.t1{
+		text-align:center;
+		vertical-align:central;
+		width:148mm;
+		margin:auto;
+		
+		}
+	body{
+		background-color:#fff;
+		}
+	table, tr ,td{
+		border-color:#000;
+		}	
+	.row{
+		
+		margin:0 auto;}	
+		.row {
+			margin-right: none;
+			margin-left: none;
+		}
+	 .body_1{
+		
+		 font-size:16px;
+		 
+		}
+		 .body_1 td{
+			 font-size:15px;
+			
+			 }
+	.g4{
+		line-height:25px;
+		}		 		
+ 
+</style>
+
+<div class="body_1" style="text-align:center">
+	<img  id="lunbo_1" src="__PUBLIC__/images/b1.jpg" width="400">
+</div>
+<div class="row body_1" style="margin-top:30px;" >
+	<div class="col-sm-6 col-sm-offset-3">
+	 <table class="t1" style="border-collapse:collapse" border="1" >
+	     <tr>
+	     <td colspan="2" style="width:25mm;" rowspan="4">
+          
+          			照片
+          			<br/>
+                    1寸
+          </td>
+	      <td>姓名：</td>
+	      <td colspan="2">{$data.bm_name}</td>
+	      <td>拼音：</td>
+	      <td colspan="2">{$data.bm_py}</td>
+          
+        </tr>
+	     <tr>
+	      <td>性别：</td>
+	      <td>
+             
+          	 &nbsp; 
+            {$data['bm_sex']==0?'男':'女'}
+               &nbsp;  &nbsp; &nbsp; 
+          </td>
+	      
+	       <td colspan="1">国籍：</td>
+	      <td colspan="1">{$data.bm_mail}</td>
+           <td colspan="1" style="width:78px;" >民族：</td>
+	      <td colspan="" style="width:75px;">{$data.bm_mz}</td>
+        </tr>
+        <tr>
+	      <td colspan="1">出生日期：</td>
+	      <td colspan="5" id="rq"></td>
+          
+         
+        </tr>
+	    <tr>
+	      <td colspan="1">所属地区：</td>
+	      <td colspan="5">{$data.bm_add}</td>
+          
+        </tr>
+	    
+       
+        
+	    <tr>
+	      <td colspan="2">报考专业</td>
+	      <td colspan="2" >{$data.bm_zy}</td>
+	      <td>报考级别</td>
+	      <td >{$data.bm_level}</td>
+	      <td>原有级别：</td>
+	      <td >{$data.bm_ylevel}</td>
+        </tr>
+	 <tr>
+	      <td colspan="2">是否制作</td>
+	      <td colspan="6" >
+		       {$data['bm_fj']==1?'制作':'不制作'}
+		</td>
+	      
+        </tr>
+	      <td colspan="8" rowspan="3" style="text-align:left;">
+          <div  class="g4" style="padding:15px 10px;">
+          备注：<br/>
+            1、如考生填报两个以上专业，需另填报名表。<br/>
+			2、本表系录入文化部数据库的依据，请考生务必如实填写。<br/>
+			3、一经报名，不得退考、更改考试科目、报考级别。<br/>
+			4、因考生本人原因缺考视为自动弃权，恕不退费和补考。
+             </div>
+            </td>
+           
+        </tr>
+      </table>
+      		 <div style="margin-left:20mm;">
+     			 <br />
+	      附：近期同底正面免冠 1 寸照片三张，照片背后需写上考生姓名。<br />
+		A、1 张贴在报名表上。<br />
+		B、1 张用液体胶接在报名表照片旁供我中心做证书用。<br />
+		C、1 张贴在准考证上。
+		</div>
+</div>
+	</div>
+</div>
+
+<div style="text-align:center">
+<input type="button" style="text-align:center; margin:auto;" class="btn btn-default"  onclick="dy()" value="打印"/>
+<a style="text-align:center; margin:auto;" class="btn btn-default" href="./Home?act=1" > 继续报名</a>
+</div>
+<script>
+
+ var ry="{$data.bm_csdate}";
+    ry=ry.split("-");
+	$("#rq").html(ry[0]+"年"+ry[1]+"月"+ry[2]+"日");
+	
+  	function  dy(){ 
+			$(".my_show").jqprint(); 
+		}
+
+  var ry="{$data.bm_csdate}";
+    ry=ry.split("-");
+	$("#rq").html(ry[0]+"年"+ry[1]+"月"+ry[2]+"日");
+  
+	
+</script>        		

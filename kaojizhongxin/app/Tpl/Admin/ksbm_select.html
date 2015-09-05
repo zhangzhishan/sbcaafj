@@ -1,0 +1,401 @@
+<script>
+	
+</script>
+<div class="row">
+<div id="cb_add" class="col-sm-12 ">
+	<div class="row">
+    <div class="form-group col-sm-2">
+		<form class="form-horizontal" role="form">
+ 			<label  for="exampleInputEmail1">添加开始时间</label>
+             <div class="input-group date form_date " data-date="" data-date-format="yyyy-mm-dd" data-link-field="k_time" data-link-format="yyyy-mm-dd">
+                    <input class="form-control" size="16" type="text"  readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div>
+                <input type="hidden" id="k_time"  />
+		</form>
+    </div>
+       <div class="form-group col-sm-2">
+		<form class="form-horizontal" role="form">
+ 			<label  for="exampleInputEmail1">添加结束时间</label>
+             <div class="input-group date form_date " data-date="" data-date-format="yyyy-mm-dd" data-link-field="j_time" data-link-format="yyyy-mm-dd">
+                    <input class="form-control" size="16" type="text"  readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div>
+             <input type="hidden" id="j_time"  />   
+		</form>
+    </div>
+      <if condition="$Think.session.zt eq 1 ">
+	<div class="form-group col-sm-2">
+		<form class="form-horizontal"  role="form">
+ 			<label for="disabledTextInput">考点名称</label>
+			<select class="form-control" name="kjj" id="kjj">
+  				<option value="0">全选</option>
+  	 			<volist name="kd" id="vo">
+                	<option value="{$vo.bm_id}">{$vo.bm_name}</option>
+                </volist>
+			</select>
+		</form>
+    </div>
+    </if>
+    <div class="form-group col-sm-2">
+		<form class="form-horizontal" role="form">
+ 			<label for="disabledTextInput">专业名称</label>
+			<select class="form-control" name="zygl" id="zygl">
+  				<option value="0">全选</option>
+  				<volist name="zy" id="vo">
+                	<option value="{$vo.bm_id}">{$vo.bm_name}</option>
+                </volist>
+			</select>
+		</form>
+    </div>
+	 <div class="form-group col-sm-1">
+		<form class="form-horizontal" role="form">
+ 			<label for="disabledTextInput">考生状态</label>
+			<select class="form-control" name="bm_kszt" id="bm_kszt">
+  				<option value="0">待考</option>
+				<option value="1">评卷中</option>
+				<option value="2">成绩公布</option>
+				<option value="3">全选</option>  				
+			</select>
+		</form>
+    </div>
+     <div class="form-group col-sm-1">
+		<form class="form-horizontal" role="form">
+ 			<label for="disabledTextInput">附件</label>
+ 		 <label class="checkbox">
+    			<input type="checkbox" id="bm_fj"> 
+ 		 </label>
+		</form>
+    </div>
+    <div class="form-group col-sm-1">
+		<form class="form-horizontal" role="form">
+ 			<label for="disabledTextInput">等级</label>
+			<select class="form-control" name="bm_level" id="bm_level">
+  				<option value="0">全选</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                 <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                 <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+  	
+			</select>
+		</form>
+    </div>
+
+    
+    </div>    
+    	<div class="row">
+
+      <if condition="$Think.session.zt eq 1 ">
+	<div class="form-group col-sm-2">
+	<form class="form-horizontal" role="form">
+ 		<label for="disabledTextInput">名称</label>
+		<input  type="text" name="bm_name" class="form-control bm_name" id="bm_name"  >
+	</form>		
+  	</div>
+    </if> 
+    
+    
+    <div class="form-group col-sm-1">
+		<form class="form-horizontal" role="form">
+        <label for="disabledTextInput">确认  </label>
+ 			<button type="button"  onclick="ksbm_select()" class="btn btn-default">确认</button>
+		</form>
+    </div>
+    
+    
+    </div>    
+	<table class="table table-striped">
+        <thead>
+          <tr>
+          	<th>选择</th>
+            <th>id</th>
+            <th>考生姓名</th>
+            <th>拼音</th>
+            <th>性别</th>
+            <th>出生日期</th>
+            <th>民族</th>
+            
+            <th>国籍</th>
+            <th>地址</th>
+            <th>专业</th>
+            <th>级别</th>
+            <th>已过级别</th>
+            <th>考点</th>
+            <th>准考证</th>
+            <th>报名时间</th>
+            <th>附件</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <volist name="data" id="vo">
+           <tr>
+           	<td><input name="on_off" class="q" value="{$vo.id}" type="checkbox"> </td>
+            <td>{$vo.id}</td>
+            <td>{$vo.bm_name}</td>
+            <td>{$vo.bm_py}</td>
+            <td> {$vo['bm_sex']==0?'男':'女'}</td>
+            <td>{$vo.bm_csdate}</td>
+            <td>{$vo.bm_mz}</td>
+           
+            <td>{$vo.bm_mail}</td>
+            <td>{$vo.bm_add}</td>
+            <td>{$vo.bm_zy}</td>
+            <td>{$vo.bm_level}</td>
+            <td>{$vo.bm_ylevel}</td>
+            <td>{$vo.kjj.bm_name}</td>
+            <td>{$vo.bm_cell}</td>
+            <td>{$vo.bm_time}</td>
+            <td> {$vo['bm_fj']==0?'不制作':'制作'}</td>
+            
+            <td>
+             
+            	<button onclick="bm_dele({$vo.id},'ksbm')" type="button" class="btn btn-default">删除</button>
+                
+                <button onClick="bm_load('ksbm_update/id/{$vo.id}')"  type="button" class="btn btn-default">修改</button>
+                <button onClick="bm_load('ksbm_dy/id/{$vo.id}')"  type="button" class="btn btn-default">打印</button>
+            </td>
+          </tr>
+    	  </volist>
+           <tr>
+            	<td colspan="7" >
+          		  <button onclick="ksbm_q()" type="button" class="btn btn-default">全选</button>
+                  <button onclick="ksbm_noq()" type="button" class="btn btn-default">取消</button>
+                    <if condition="$Think.session.zt eq 1 ">
+                  <button onClick="c1()" type="button" class="btn btn-default">导出xml</button>
+				    <button onClick="c11()" type="button" class="btn btn-default">全部导出xml</button>
+					
+                  </if>
+                 </td>
+           		<td colspan="8">
+          		 <div class="result page">{$page}</div>
+                 </td>
+                 <td colspan="2" >
+                
+          		  <button onclick="ksbm_dele()" type="button" class="btn btn-default">删除</button>
+              
+                   <button onclick="ksbm_dy()" type="button" class="btn btn-default">打印</button>
+                   <button onclick="ksbm_bg()" type="button" class="btn btn-default">打印表格</button>
+                 </td>
+           </tr>
+		     <tr>
+            	<td colspan="9" >
+          		
+                    <if condition="$Think.session.zt eq 1 ">
+					<button onClick="kszt(0)" type="button" class="btn btn-default">全部待考</button>
+					<button onClick="kszt(1)" type="button" class="btn btn-default">全部评中</button>
+					<button onClick="kszt(2)" type="button" class="btn btn-default">全部成绩公布</button>
+                  </if>
+                 </td>
+           		
+               
+           </tr>
+        </tbody>
+      </table>
+      
+</div>
+</div>
+<script>
+$(".page a").click(function(){
+		$.get($(this).attr("href")+"", 
+  					function(data){
+						
+					$("#bm_body").html(data);
+   					 
+ 					 });
+	return false;
+	;
+	});
+function kszt(zt){
+	var chen=" " ,no_off="",data="";
+	$(".q").each(function() {
+		//alert($(this).prop("checked"));
+		if($(this).prop("checked")){
+			
+			chen+=no_off+$(this).val();
+			no_off=",";
+		}
+		
+	});
+	if(!confirm("确定修改？")){
+		return;
+	}
+	if($.trim(chen)){
+		data={"id":chen,"bm_kszt":zt};
+		$.post("__URL__/ksbm_kszt",data,
+  		function(data){
+						
+		$("#bm_body").html(data);
+						
+					 
+ 		 });			
+	}else{
+		data={"bm_kszt":zt};
+		$.post("__URL__/ksbm_kszt",data,
+  		function(data){
+						
+		$("#bm_body").html(data);
+						
+					 
+ 		 });			
+	}
+	
+
+}
+function ksbm_bg(){
+		var chen=" " ,no_off="";
+	$(".q").each(function() {
+		//alert($(this).prop("checked"));
+		if($(this).prop("checked")){
+			
+			chen+=no_off+$(this).val();
+			no_off=",";
+		}
+		
+	});
+	data={"id":chen};
+	$.post("__URL__/ksbm_bg",data,
+  		function(data){
+						//alert(data);
+		$("#bm_body").html(data);
+						//bm_load(load_url);					
+					   //eval(data);
+					 
+ 		 });			
+}
+function ksbm_q(){
+	$(".q").each(function() {
+		this.checked=true;
+	});
+	}
+	
+function ksbm_noq(){
+	$(".q").each(function() {
+		this.checked=false;
+	});
+	}
+function ksbm_dele(){
+	var chen=" " ,no_off="";
+	$(".q").each(function() {
+		//alert($(this).prop("checked"));
+		if($(this).prop("checked")){
+			
+			chen+=no_off+$(this).val();
+			no_off=",";
+		}
+		
+	});
+	bm_dele(chen,"ksbm");
+	//alert(chen);
+	}
+function ksbm_dy(){
+	var chen=" " ,no_off="";
+	$(".q").each(function() {
+		//alert($(this).prop("checked"));
+		if($(this).prop("checked")){
+			
+			chen+=no_off+$(this).val();
+			no_off=",";
+		}
+		
+	});
+	//alert(chen);
+	ksbm_dyb(chen,"ksbm");
+	//alert(chen);
+	}	
+$('.form_date').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0
+    });		
+function ksbm_select(){
+	var k_time,j_time,kjj,zygl,bm_level,bm_where,bm_fj,bm_kszt;
+	bm_where="";
+	k_time=$("#k_time").val();
+	j_time=$("#j_time").val();
+	kjj	  =$("#kjj").val();
+	zygl  =$("#zygl").val();
+	bm_level=$("#bm_level").val(); 
+	bm_name=$.trim($("#bm_name").val()); 
+	bm_kszt=$("#bm_kszt").val(); 
+	bm_fj=$("#bm_fj").prop('checked'); 	
+ 	if(k_time){
+		bm_where="bm_time >= '"+k_time+"'  and  "; 
+	}
+	if(j_time){
+		bm_where+="bm_time <= '"+j_time+"'  and  ";
+	}
+	if(bm_name){
+		bm_where+="bm_name REGEXP '"+bm_name+"'  and  ";
+	}
+	if(kjj !=0 && kjj){
+		 
+		bm_where+="bm_kjj_id="+kjj+" and ";
+	}
+	 if(zygl!=0){
+		bm_where+="bm_zy_id="+zygl+" and ";
+	}
+	if(bm_level!=0){
+		bm_where+="bm_level="+bm_level +" and ";
+	}
+	if(bm_kszt!=3){
+		bm_where+="bm_kszt="+bm_kszt +" and ";
+	}
+	 //alert(bm_where);
+	 if(bm_where==""){
+		 bm_where+="id<>0  and ";
+	 }
+	 if(bm_fj==true){
+	 	 bm_where+="bm_fj=1  and ";
+	 }
+	$.post("__URL__/ksbm_select",{"bm_where":bm_where},
+  					function(data){
+					$("#bm_body").html(data);
+					//bm_load('ksbm_select');	
+	});
+	//alert(bm_where);
+	//alert(bm_where);
+	//alert(bm_where);
+	//alert(bm_where);
+	//alert(bm_where);
+	//alert(bm_where);
+	//alert(bm_where);
+	//alert(bm_where);
+	//alert(bm_where);
+	//alert(bm_where);
+	//alert(bm_where);
+	
+	
+	}	
+ function c1(){
+	 var chen=" " ,no_off="";
+	$(".q").each(function() {
+		//alert($(this).prop("checked"));
+		if($(this).prop("checked")){
+			
+			chen+=no_off+$(this).val();
+			no_off=",";
+		}
+		
+	});
+	 if($.trim(chen)){
+	 
+	 bm_load1('ksbm_xml?id='+chen);
+	 }
+	 }
+	function c11(){
+	 bm_load1('ksbm_xml');
+	 }		 		
+</script>

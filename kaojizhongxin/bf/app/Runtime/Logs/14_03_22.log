@@ -1,0 +1,44 @@
+[ 2014-03-22T09:08:38+08:00 ] 27.159.122.126 /wwzz/gjyphp/xmyk/index.php/Admin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.039636s ]
+INFO: [ route_check ] --END-- [ RunTime:0.039715s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.027069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027138s ]
+NOTIC: [8] Undefined index:  action D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.429356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.429443s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.038823s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.072148s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.008810s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.023491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.143508s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.053405s ]
+INFO: [ view_end ] --END-- [ RunTime:0.053504s ]
+
+[ 2014-03-22T12:07:17+08:00 ] 121.204.200.76 /wwzz/gjyphp/xmyk/index.php/Admin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.064842s ]
+INFO: [ route_check ] --END-- [ RunTime:0.064922s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.016498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016557s ]
+NOTIC: [8] Undefined index:  action D:\webw\test\wwzz\gjyphp\xmyk\app\Lib\Action\AdminAction.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: h D:\webw\test\wwzz\gjyphp\xmyk\app\Runtime\Cache\b13352dcb5f3f616c3d6196742053667.php 第 17 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.560322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.560414s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.032838s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.063700s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.041772s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.040582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.179047s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.074506s ]
+INFO: [ view_end ] --END-- [ RunTime:0.074569s ]
+

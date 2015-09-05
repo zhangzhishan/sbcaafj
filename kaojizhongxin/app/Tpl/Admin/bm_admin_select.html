@@ -1,0 +1,52 @@
+<script>
+	//统一删除数据	
+		function bm_xg1(id,name){
+			
+			if(!confirm("是否修改")){
+			  return;
+			}
+			
+			var zhi=$("#"+id+"_val").val();
+			if(!zhi){
+				return;
+			}
+			var data={"id":id,"value1":zhi};
+			$.post("__URL__/bm_xg",data,
+  					function(data){	
+					alert("修改成功")				
+					$("#bm_body").html(data);
+ 					 });
+			
+		
+		}
+				
+</script>
+<div class="row">
+<div id="cb_add" class="col-sm-9 col-sm-offset-2">
+	<table class="table table-striped">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>名称</th>
+            <th>等级</th>
+            <th>密码</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <volist name="data" id="vo">
+           <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.name}</td>
+            <td>{$vo['zt']==1? "管理员":"其他"}</td>
+			<td><input  class="form-control" id="{$vo.id}_val" placeholder="密码只可修改不保留"></td>
+            <td>
+				<button onclick="bm_dele({$vo.id},'bm_admin')" type="button" class="btn btn-default">删除</button>
+				<button onclick="bm_xg1({$vo.id},'bm_admin')" type="button" class="btn btn-default">修改</button>
+			</td>
+          </tr>
+    	  </volist>
+        </tbody>
+      </table>
+</div>
+</div>

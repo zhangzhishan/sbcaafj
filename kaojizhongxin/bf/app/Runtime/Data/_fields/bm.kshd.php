@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'bm_id', 1 => 'kjj_id', 2 => 'ks_time', 3 => 'k_time', 4 => 'j_time', 5 => 'bm_time', 6 => 'on_off', '_autoinc' => true, '_pk' => 'bm_id', '_type' => array ( 'bm_id' => 'int(11)', 'kjj_id' => 'int(11)', 'ks_time' => 'date', 'k_time' => 'date', 'j_time' => 'date', 'bm_time' => 'time', 'on_off' => 'varchar(11)', ), );?>

@@ -1,0 +1,28 @@
+<script>
+	
+</script>
+<div class="row">
+<div id="cb_add" class="col-sm-8 col-sm-offset-2">
+	<table class="table table-striped">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>名称</th>
+            <th>等级</th>
+            
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <volist name="data" id="vo">
+           <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.name}</td>
+            <td>{$vo['zt']==1? "管理员":"其他"}</td>
+            <td><button onclick="bm_dele({$vo.id},'bm_admin')" type="button" class="btn btn-default">删除</button></td>
+          </tr>
+    	  </volist>
+        </tbody>
+      </table>
+</div>
+</div>

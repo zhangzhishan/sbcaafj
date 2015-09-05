@@ -1,0 +1,127 @@
+/* CSS Document */
+
+
+
+UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+
+
+.clearfix:after {
+	LINE-HEIGHT: 0; DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; FONT-SIZE: 0px; CONTENT: "."
+}
+
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; VERTICAL-ALIGN: top; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.none {
+	DISPLAY: none
+}
+
+.promo_show {
+	POSITION: relative;/* MARGIN: 10px 0px 0px 215px;*/ WIDTH: 962px; HEIGHT: 225px
+}
+.promo_wrapper {
+	POSITION: relative; HEIGHT: 225px; OVERFLOW: hidden
+}
+.mini_promo {
+	MARGIN-TOP: 1px; MARGIN-RIGHT: -2px
+}
+.mini_promo A {
+	WIDTH: 182px; DISPLAY: block; BACKGROUND: url(/hdp/1haodian/images/loading2.gif) #eee no-repeat center center; FLOAT: left; HEIGHT: 144px; MARGIN-RIGHT: 2px; _display: inline
+}
+.mini_promo A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.mini_promo IMG {
+	WIDTH: 182px; HEIGHT: 144px
+}
+.mini_promo A:hover IMG {
+	FILTER: alpha(opacity=70); -moz-opacity: .7; -khtml-opacity: .7; opacity: .7
+}
+.mini_promo A.bg_none {
+	BACKGROUND-IMAGE: none
+}
+.promo_show OL {
+	POSITION: absolute; HEIGHT: 225px; TOP: 0px; LEFT: 0px
+}
+.promo_show OL LI {
+	WIDTH: 962px; FLOAT: left; HEIGHT: 225px
+}
+.promo_show OL .cur {
+	POSITION: relative
+}
+.promo_show OL LI .big_pic {
+	WIDTH: 962px; DISPLAY: block; BACKGROUND: url(/hdp/1haodian/images/loading2.gif) #eee no-repeat center center; HEIGHT: 225px
+}
+.promo_show OL LI .big_pic IMG {
+	WIDTH: 962px; HEIGHT: 225px;
+	
+}
+.show_num_bg {
+	POSITION: absolute; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#4C000000',GradientType=1); WIDTH: 962px; HEIGHT: 25px; TOP: 0px; RIGHT: 0px;
+	background:url(show_num_bg.png)  no-repeat right;
+}
+.promo_show UL {
+	POSITION: absolute; TEXT-ALIGN: right; WIDTH: 962px; HEIGHT: 25px; TOP: 0px; RIGHT: 10px
+}
+.promo_show UL LI {
+	TEXT-ALIGN: center; ZOOM: 1; DISPLAY: inline-block; FONT: 28px/22px tahoma, Arial, Simsun; HEIGHT: 25px; COLOR: #fff; MARGIN-LEFT: 7px; CURSOR: pointer
+}
+.promo_show UL LI.cur {
+	COLOR: #c00; CURSOR: default
+}
+.promo_show A.show_next {
+	POSITION: absolute; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#3F666666',endColorstr='#3F666666'); WIDTH: 45px; DISPLAY: none; HEIGHT: 80px; TOP: 183px
+}
+.promo_show A.show_pre {
+	POSITION: absolute; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#3F666666',endColorstr='#3F666666'); WIDTH: 45px; DISPLAY: none; HEIGHT: 80px; TOP: 183px
+}
+.promo_show A.show_next {
+	RIGHT: 0px
+}
+.promo_show A.show_pre {
+	LEFT: 0px
+}
+.promo_show A.show_next:hover {
+	FILTER: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F666666',endColorstr='#7F666666');
+	
+}
+.promo_show A.show_pre:hover {
+	FILTER: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F666666',endColorstr='#7F666666')
+}
+.promo_show A.show_next S {
+	WIDTH: 45px; DISPLAY: block; BACKGROUND:url(index_sprite.png)  no-repeat -80px -220px; HEIGHT: 80px
+}
+.promo_show A.show_pre S {
+	WIDTH: 45px; DISPLAY: block; BACKGROUND:url(index_sprite.png)  no-repeat 0px -220px; HEIGHT: 80px
+}
+
+
+
+
+
+.w1200 .promo_show {
+	WIDTH: 770px
+}
+.w1200 .mini_promo A {
+	WIDTH: 256px; MARGIN-RIGHT: 1px
+}
+.w1200 .promo_show OL LI {
+	WIDTH: 770px
+}
+.w1200 .promo_show OL LI .big_pic {
+	WIDTH: 770px; HEIGHT: 300px
+}
+.w1200 .promo_show OL LI .big_pic IMG {
+	WIDTH: 770px
+}
+.w1200 .mini_promo IMG {
+	WIDTH: 256px
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>统一资料管理</title>
+
+
+<include file="Common:mhead" />
+<script src="__PUBLIC__/js/jquery-1.8.0.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+<br />
+
+<table border="0" cellpadding="1" cellspacing="1" align="center" class="center main mtable">
+	<tr class="titlebg">
+		<th width='5%'></th>
+		<th width='5%'>编号</th>
+		<th width='5%'>ID</th>
+		<th>名称</th>
+		<th>日期</th>
+	</tr>
+	
+	<volist name='list' id='vo' key='k'>
+	<tr>
+		<td class="tcenter" height='55'><input type="checkbox" name="lid" value="{$vo.id}" /></td>
+		<td class="tcenter">{$k}</td>
+		<td class="tcenter">{$vo.id}</td>
+		<td> &nbsp;<a href="{$vo.path|true_file_path=###}">{$vo.title}</a></td>
+		<td class="tcenter"> {$vo.odate|date='Y-m-d' ,###}</td>
+	</tr>
+	</volist>
+
+	
+</table>
+
+<br />
+
+<if condition="($pagecount gt C('PAGECOUNT'))">
+	<div class="main mborder navh tfont14">
+		<div class="result page">{$page}</div>
+	</div>
+</if>
+
+<include file="Common:mfooter" />
+
+</body>
+</html>
