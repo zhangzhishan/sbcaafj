@@ -1,0 +1,109 @@
+
+<include file="Common:header" />
+
+<include file="Common:index_top" />
+
+<script language="javascript" type="text/javascript" src="__PUBLIC__/My97DatePicker/WdatePicker.js"></script>
+
+
+<table width="962" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop">
+	<tr>
+		<td width="227" class='index-left-block'><include file="Common:index_left" /></td>
+		<td width="12"></td>
+		<td width="723" class='index-right-block'>
+			<div class="index-right-title title-font">{$right_text_title}</div>
+			
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+				<tr><td  class="about-text" >
+					<div id="iContent" class='mypage-text'>
+						
+							<div style='text-indent:30px; padding-top:30px;'>
+									姓名：<input name='xname' id='xname' size='10'> &nbsp;
+									出生日期：<input class="Wdate1" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" id="xbirth"  size="12" />  &nbsp;
+									性别：<select name='xsex' id='xsex'><option value='0'>男</option><option value='1'>女</option></select>
+									<input type='button' id='search' value='点击查询'>
+							</div>
+                                
+							<div id='result' style='padding-top:20px;margin-left:30px;font-size:14px; color:#F00;width: 550px;'>
+                            备注：因部分考生未填写出生日，若无法查询，请把出生日改为1号。如：出生年月日2011-9-25改为2011-9-1
+                            
+                            </div>
+
+					</div>
+					<div id='mypage'></div>
+				</td></tr>
+			</table>	
+
+			
+
+		</td>
+	</tr>
+</table>
+
+<include file="Common:index_footer" />
+
+<script type="text/javascript">
+	
+	$(function(){
+
+		$('#search').click(function(){
+
+			var xname = $('#xname').val();
+			var xbirth = $('#xbirth').val();
+			var xsex = $('#xsex').val();
+			if(xname == ''){
+				alert('请输入姓名');
+				$('#xname')[0].focus();
+				return false;
+			}
+
+			if(xbirth == ''){
+				alert('请选择出生日期');
+				$('#xbirth')[0].focus();
+				return false;
+			}
+
+
+			$.get('{:U(GROUP_NAME . "/Index/dochenji")}' ,{xname : xname ,xbirth : xbirth ,xsex : xsex} ,function(data){
+
+				var tmp_code = data.length < 1 ? undefined : data[0].code;
+
+				if(tmp_code == undefined){alert('没有查询到数据');$('#result').html('');return false;}
+				var html = '<p>姓 名：'+ xname +'</p>';
+				html += '<p>性 别：'+ data[0].sex +'</p>';
+				html += '<p>出生日期：'+ xbirth +'</p>';
+				html += '<p>民 族：'+ data[0].national +'</p>';
+
+				html += "<table width='500' class='kaojiresult'>"
+				html += "<tr>"
+				html += "	<th>考级证书编号</th>"
+				html += "	<th>专业</th>"
+				html += "	<th>级别</th>"
+				html += "	<th>成绩</th>"
+				html += "</tr>"
+				for(var i = 0; i < data.length ;i++){
+					// html += '<p>------------------------------------------------</p>';
+					
+					// html += '<p>专 业：'+ data[i].cate +'</p>';
+					// html += '<p>级 别：'+ data[i].level +'</p>';
+					// html += '<p>成 绩：'+ data[i].result +'</p>';
+					html += "<tr>"
+					html += "	<td>"+ data[i].code +"</td>"
+					html += "	<td>"+ data[i].cate +"</td>"
+					html += "	<td>"+ data[i].level +"</td>"
+					html += "	<td>"+ data[i].result +"</td>"
+					html += "</tr>"
+				}
+				html += "</table>"
+
+				$('#result').html(html);
+
+			} ,'json');
+
+		});
+
+
+	})
+	
+
+</script>

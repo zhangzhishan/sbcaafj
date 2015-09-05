@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>查询信息管理</title>
+
+<link href="__PUBLIC__/Css/mystyle.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/themes/icon.css" />
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.easyui.min.js"></script>
+
+
+<script language="javascript" type="text/javascript" src="http://www.caafj.com/Public/My97DatePicker/WdatePicker.js"></script>
+<include file="Common:mhead" />
+<style>
+.mtable	tr td{
+		text-align:center;
+	}
+.mtable	tr td:last-child{
+		text-align:left;
+	}
+</style>
+</head>
+
+<body>
+
+
+<form name="formnews" method="post" action="/index.php/Admin/Kaojixixi/update_ac">
+<table border="0" cellpadding="1" cellspacing="1" align="center" class="center main mtable">
+	<tr class="titlebg">
+		<th colspan="2">修改页面</th>
+	</tr>
+	<tr>
+		<td width="10%" >
+			编号	
+		</td>
+		<td width="90%"  >
+			<input style="text" name="code" value="{$list.code}" >	
+		</td>
+	</tr>
+	<tr>	
+		<td width="10%" >
+			姓名	
+		</td>
+		<td width="90%" >
+			<input style="text" name="name" value="{$list.name}" >
+		</td>
+	</tr>
+	<tr>	
+		<td width="10%" >
+			性别	
+		</td>
+		<td width="90%" >
+		<select name="sex">
+				<option value="1">女</option>
+				<option value="0" <if condition="$list['sex'] eq '0'">selected<else/></if>>男</option>
+		</select>	
+		</td>
+	</tr>	
+	<tr>	
+		<td width="10%" >
+			等级	
+		</td>
+		<td width="90%" >
+			<input style="text" name="level" value="{$list.level}" >
+		</td>
+	</tr>
+	<tr>
+		<td width="10%" >
+			出生日期	
+		</td>
+		<td width="90%" >
+			<input style="text" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"  name="date" value="{$list.date|date='Y-m-d' ,###}" >
+		</td>
+	</tr>
+	<tr>
+		<td width="10%" >
+			民族
+		</td>
+		<td width="90%" >
+			<input style="text" name="national" value="{$list.national}" >
+		</td>
+	</td>
+	<tr>
+		<td  width="10%" >
+			专业	
+		</td>
+		<td width="90%" >
+			<input style="text" name="cate" value="{$list.cate}" >
+		</td>
+	</tr>
+	<tr>
+			<td class="tcenter" colspan="2">
+		<input type="hidden" name="id" value="{$list.id}"  >
+		<input type="submit" value="修改" />
+		</td>
+
+	</tr>
+</table>
+</form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,22 @@
+﻿
+
+<div class="blank15"></div>
+
+<div class="index-footer">
+	<div class="index-link"><span>友情链接：</span>
+		<volist name='linklist' id='link'>
+			<if condition="$link.url neq ''">
+				<a href="{$link.url}" target='_blank'>{$link.title}</a> &nbsp;&nbsp;&nbsp; 
+			<else/>	
+				{$link.title} &nbsp;&nbsp;&nbsp; 
+			</if>
+		</volist>	
+	</div>
+	
+	<div style="line-height:180%;">{$webconfig.HJwebfooter} </div>
+</div>
+
+<div class="blank15"></div>
+
+</body>
+</html>

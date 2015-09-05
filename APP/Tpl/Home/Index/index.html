@@ -1,0 +1,198 @@
+﻿
+<include file="Common:header" />
+
+<include file="Common:index_top" />
+
+<script type="text/javascript">
+$(function(){
+	var oDiv = $("#play");  //外部盒子
+	var count = $("#play ul li").length;  //内部图片数量
+	var countwidth = $("#play ul li").width();  //图片边框宽度
+	var oUl = $("#play ul").css("width",count*countwidth);  //ul li总宽度
+	var now = 0;
+	var next = $("#next");
+	var prev = $("#prev");
+	//点击按钮数量
+	for(var i = 0; i < count; i++){
+		$("#play ol").append("<li>" + Number(i+1) + "</li>");
+		$("#play ol li:first").addClass("active");
+	}
+	//左右点击图片获取
+	var nI = $("#play ul li:nth-child(2)").find("img").attr("src");
+	$(".nextImg img").attr("src",nI);
+	var pI = $("#play ul li:last-child").find("img").attr("src");
+	$(".prevImg img").attr("src",pI);
+	//按钮点击事件
+	var aBtn = $("#play ol li");
+	aBtn.each(function(index){
+		$(this).click(function(){
+			clearInterval(timer);
+			tab(index);
+			nextImg();
+			prevImg();
+			timer=setInterval(autoRun,auto);
+		});
+	});
+	//图片循环事件
+	function tab(index){
+		now = index;
+		aBtn.removeClass("active");
+		aBtn.eq(index).addClass("active");
+		oUl.stop(true,false).animate({"left":-229 * now},400);
+	}
+	//下一张按钮图片切换
+	function nextImg(){
+		var d = $("#play ul li").find("img").eq(now+1).attr("src");
+		var nI = $("#play ul li:nth-child(1)").find("img").attr("src");
+		$(".nextImg").find("img").attr("src",d);
+		if(now==count-1){
+			$(".nextImg").find("img").attr("src",nI);
+		}
+	}
+	//上一张图片按钮切换
+	function prevImg(){
+		var f = $("#play ul li").find("img").eq(now-1).attr("src");
+		$(".prevImg").find("img").attr("src",f);
+	}
+	
+	//下一张点击事件
+	next.click(function(){
+		clearInterval(timer);
+		now++;
+		if(now==count){
+			now=0;
+		}
+		tab(now);
+		nextImg();
+		prevImg();
+		timer=setInterval(autoRun, 2000);
+	});
+	//上一张点击事件
+	prev.click(function(){
+		clearInterval(timer);
+		now--;
+		if(now==-1){
+			now=count-1;
+		}
+		tab(now);
+		nextImg();
+		prevImg();
+		timer=setInterval(autoRun, 2000);
+	});
+	//自动轮播定义
+	function autoRun(){
+		now++;
+		if(now==count){
+			now=0;
+		}
+		tab(now);
+		nextImg();
+		prevImg();
+	};
+
+	var timer=setInterval(autoRun, 2000);
+});
+</script>
+
+<table width="962" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop">
+	<tr>
+		<td width="227" class='index-left-block'><include file="Common:index_left" /></td>
+		<td width="12"></td>
+		<td width="723">
+			<div class="index-right-title title-font">
+				最新公告
+			</div>
+			
+			<div class="index-about title-font" style="border:0px solid red;height:40px; overflow:hidden;">
+				<br>
+					<volist name='list' id='v' offset='0' length='1' >
+						&nbsp;
+						<a style="color:red; text-align:center;" href="{:U('Home/News/detail' ,array('id'=>$v['id']) ,'')}">{$v.title}</a>
+						&nbsp;&nbsp;&nbsp;
+					</volist>
+			</div>
+			<br>
+			
+			<div class="index-right-title title-font">
+				<span class="more"><a href="{:U('Home/Index/detail' ,array('id'=>9) ,'')}">+更多</a></span>机构简介
+			</div>
+			
+
+			<volist name='slidelist' id='slide'>
+
+	</volist>
+
+			<div class="index-about">
+			<span class="play" id="play">
+    				<ol>
+   					</ol>
+					<ul>
+						<volist name='slidelist' id='slide'>
+							<li>
+								<a  href='{$slide.url}' ><img src="__PUBLIC__/slide/images/{$slide.img1}" width=229 height=198 ></a>
+							</li>
+						</volist>
+					</ul>
+						
+			</span>
+				<!--<span><img src="__PUBLIC__/images/index_18.jpg" width="229" height="198" /></span>-->
+				<div style="border:0px solid red;height:205px; overflow:hidden">{$summary}</div>
+			</div>
+			
+			<div class="index-btn">
+				<a href='http://www.caafj.com/kaojizhongxin/index.php/Home'><img src="__PUBLIC__/images/index_22.jpg" width="245" height="65" /></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="{:U('Home/Index/chenjichaxun')}"><img src="__PUBLIC__/images/index_24.jpg" width="245" height="65" /></a>
+			</div>
+			
+			
+			<div class="index-right-title title-font"><span class="more"><a href="{:U('Home/Product2/index','','')}">+更多</a></span>作品展示</div>
+			<div class="index-product-list">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center">
+					<tr><td colspan="3" height="20"></td></tr>
+					<tr>
+						<td><div class="btn"><img src="__PUBLIC__/images/index_32.jpg" width="25" height="81" class='pointer' onclick='change_scroll(1)' /></div></td>
+						<td>
+						
+							<div id='demo' style='overflow:hidden; width:640px; margin:0 auto;' >
+								<table cellpadding='0' align='left' border='0' cellspace='0'><tr><td id='demo1' valign='top'>
+
+									<table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="center index-scroll">
+										<tr>
+											<volist name='pro' id='vo'>
+												<td>
+													<span style="display:block;margin-left:10px;">
+													<span class='middle-out'><span class='middle-in'>
+														<a href="{:U('Home/Product2/detail' ,array('id'=>$vo['id']) ,'')}">
+														<img src="{$vo.img1|is_file_exists=###}" /></a>
+													</span></span> 
+													</span>
+												</td>
+											</volist>
+										</tr>
+									</table>
+
+
+									</td><td id='demo2' valign='top'></td>	</tr>
+								</table>
+							</div>
+							<script type='text/javascript' language='JavaScript'>var direction = 1;toboth('demo','demo1','demo2',30,'hehe123');function change_scroll(o){direction = o;}</script>
+
+						
+						</td>
+						<td><div class="btn"><img src="__PUBLIC__/images/index_33.jpg" width="25" height="81" class='pointer' onclick='change_scroll(2)' /></div></td>
+					</tr>
+				</table>
+				
+				
+				
+			</div>
+		</td>
+	</tr>
+</table>
+
+				
+
+
+<include file="Common:index_footer" />

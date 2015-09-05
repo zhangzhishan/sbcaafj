@@ -1,0 +1,74 @@
+
+<include file="Common:header" />
+
+<include file="Common:index_top" />
+
+<table width="962" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop">
+	<tr>
+		<td width="227" class='index-left-block'><include file="Common:index_left" /></td>
+		<td width="12"></td>
+		<td width="723">
+			<div class="index-right-title title-font">
+				<span class="more"><a href="{:U('Home/Index/detail' ,array('id'=>9) ,'')}">+更多</a></span>机构简介
+			</div>
+			<div class="index-about">
+				<span><img src="__PUBLIC__/images/index_18.jpg" width="229" height="198" /></span>
+				<div style="border:0px solid red;height:205px; overflow:hidden">{$summary}</div>
+			</div>
+			
+			<div class="index-btn">
+				<img src="__PUBLIC__/images/index_22.jpg" width="245" height="65" />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="{:U('Home/Index/chenjichaxun')}"><img src="__PUBLIC__/images/index_24.jpg" width="245" height="65" /></a>
+			</div>
+			
+			
+			<div class="index-right-title title-font"><span class="more"><a href="{:U('Home/Product2/index','','')}">+更多</a></span>作品展示</div>
+			<div class="index-product-list">
+				<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center">
+					<tr><td colspan="3" height="20"></td></tr>
+					<tr>
+						<td><div class="btn"><img src="__PUBLIC__/images/index_32.jpg" width="25" height="81" class='pointer' onclick='change_scroll(1)' /></div></td>
+						<td>
+						
+							<div id='demo' style='overflow:hidden; width:640px; margin:0 auto;' >
+								<table cellpadding='0' align='left' border='0' cellspace='0'><tr><td id='demo1' valign='top'>
+
+									<table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="center index-scroll">
+										<tr>
+											<volist name='pro' id='vo'>
+												<td>
+													<span style="display:block;margin-left:10px;">
+													<span class='middle-out'><span class='middle-in'>
+														<a href="{:U('Home/Product2/detail' ,array('id'=>$vo['id']) ,'')}">
+														<img src="{$vo.img1|is_file_exists=###}" /></a>
+													</span></span>
+													</span>
+												</td>
+											</volist>
+										</tr>
+									</table>
+
+
+									</td><td id='demo2' valign='top'></td>	</tr>
+								</table>
+							</div>
+							<script type='text/javascript' language='JavaScript'>var direction = 1;toboth('demo','demo1','demo2',30,'hehe123');function change_scroll(o){direction = o;}</script>
+
+						
+						</td>
+						<td><div class="btn"><img src="__PUBLIC__/images/index_33.jpg" width="25" height="81" class='pointer' onclick='change_scroll(2)' /></div></td>
+					</tr>
+				</table>
+				
+				
+				
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+
+<include file="Common:index_footer" />

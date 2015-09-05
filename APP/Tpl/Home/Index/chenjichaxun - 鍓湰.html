@@ -1,0 +1,75 @@
+
+<include file="Common:header" />
+
+<include file="Common:index_top" />
+
+<table width="962" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop">
+	<tr>
+		<td width="227" class='index-left-block'><include file="Common:index_left" /></td>
+		<td width="12"></td>
+		<td width="723" class='index-right-block'>
+			<div class="index-right-title title-font">{$right_text_title}</div>
+			
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+				<tr><td  class="about-text" >
+					<div id="iContent" class='mypage-text'>
+						
+							<div style='text-indent:30px; padding-top:30px;'>
+									请输入编号：<input name='xcode' id='xcode' size='35'>
+									<input type='button' id='search' value='点击查询'>
+							</div>
+
+							<div id='result' style='padding-top:20px;margin-left:30px;font-size:14px;'></div>
+
+					</div>
+					<div id='mypage'></div>
+				</td></tr>
+			</table>	
+
+			
+
+		</td>
+	</tr>
+</table>
+
+<include file="Common:index_footer" />
+
+<script type="text/javascript">
+	
+	$(function(){
+
+		$('#search').click(function(){
+
+			var code = $('#xcode').val();
+
+			if(code == ''){
+				alert('请输入编号');
+				$('#xcode')[0].focus();
+				return false;
+			}
+
+
+			$.get('{:U(GROUP_NAME . "/Index/dochenji")}' ,{xcode : code} ,function(data){
+
+				//alert(data);
+
+				if(data.name == undefined){alert('没有查询到数据');return false;}
+				var html = '<p>姓 名：'+ data.name +'</p>';
+				html += '<p>性 别：'+ data.sex +'</p>';
+				html += '<p>出生日期：'+ data.date +'</p>';
+				html += '<p>民 族：'+ data.national +'</p>';
+				html += '<p>专 业：'+ data.cate +'</p>';
+				html += '<p>级 别：'+ data.level +'</p>';
+				html += '<p>成 绩：'+ data.result +'</p>';
+
+				$('#result').html(html);
+
+			} ,'json');
+
+		});
+
+
+	})
+	
+
+</script>

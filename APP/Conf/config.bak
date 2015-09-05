@@ -1,0 +1,44 @@
+﻿<?php
+return array(
+	//'配置项'=>'配置值'
+	'EDITURL' => 'http://www.caafj.com' . __ROOT__ ,
+	
+	'TMPL_PARSE_STRING' => array(
+			'__UPLOAD__' => __ROOT__ . '/Public/uploads',  //后台须重新定义，无法又叠加
+	),
+
+	
+	//新闻表分类
+	'NEWSCLASS' => array(
+		'KJBZ' => 2,   //各科目考级标准
+		'KJJC' => 3,   //考级教材
+		'XYHZC'=> 4,   //校友会章程
+		'XYHZX'=> 5,   //校友会资讯
+		'LSHLS'=> 6,   //理事会理事
+		'GSDT' => 7,   //公司动态
+	),
+	
+	
+	//开启分组
+	'APP_GROUP_LIST' => 'Home,Admin',
+	'DEFAULT_GROUP' => 'Home',
+	
+	//数据库连接参数
+	'DB_HOST' => 'localhost',
+	'DB_USER' => 'caafj',
+	'DB_PWD'  => 'caafj!@#',
+	'DB_NAME' => 'caafj',
+	'DB_PREFIX' => 'think_',
+	
+	//点语法默认解析(会解析对象或数组，此配置为直接解析为数组)
+	'TMPL_VAR_IDENTIFY' => 'array',
+	
+	//控制器名称与模板名连接符，可减少一个文件夹目录
+	//'TMPL_FILE_DEPR' => '_',  //Index_Index.html
+	
+	//指定错误页面模板路径
+	//'TMPL_EXCEPTION_FILE' => './Public/Tpl/error.html',
+	
+	//'URL_MODEL' => 1
+);
+?>

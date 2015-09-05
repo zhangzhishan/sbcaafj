@@ -1,0 +1,249 @@
+
+
+<if condition="($left_index eq 0 || $left_index eq '')">
+<div class="index-left-title title-font">信息发布</div>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+				<tr><td height="300">
+					<div class="blank10"></div>
+					<div class="list">
+						<ul>
+							<volist name='list' id='v'>
+								<li><a href="{:U('Home/News/detail' ,array('id'=>$v['id']) ,'')}">{$v.title|get_title_sub=###,0,13}</a></li>
+							</volist>	
+						</ul>
+					</div>
+					
+				</td></tr>
+			</table>
+</if>
+
+<!--中国美院美术考级-->
+<if condition="($left_index eq 1)">
+	<div class="index-left-title title-font">中国美院美术考级</div>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+				<tr><td height="300">
+					<div class="blank10"></div>
+					<div class="list">
+						<ul>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>1) ,'')}">考级介绍</a></li>
+							<li><a href="{:U('Home/News/index' ,array('classid' => 2) ,'')}">各科目考级标准</a></li>
+							<li><a href="{:U('Home/News/index' ,array('classid' => 3) ,'')}">考级教材</a></li>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>2) ,'')}">考点信息</a></li>
+
+							<li><a href="http://www.caafj.com/kaojizhongxin/index.php/Home">网上报名</a></li>
+							<li><a href="{:U(GROUP_NAME . '/Index/chenjichaxun')}">成绩查询</a></li>
+							<li><a href="{:U('Home/Product2/index')}">优秀作品展示</a></li>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>332) ,'')}">考级辅导教师资格认定</a></li>
+						</ul>
+					</div>
+					
+				</td></tr>
+			</table>
+</if>	
+
+<!--中国美院附中招考-->
+<if condition="($left_index eq 2)">
+	<div class="index-left-title title-font">中国美院附中招考</div>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+				<tr><td height="300">
+					<div class="blank10"></div>
+					<div class="list">
+						<ul>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>3) ,'')}">学校简介</a></li>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>4) ,'')}">招生简章</a></li>
+						</ul>
+					</div>
+					
+				</td></tr>
+			</table>
+</if>	
+
+<!--中国美院本科招考-->
+<if condition="($left_index eq 331)">
+	<div class="index-left-title title-font">中国美院本科招考</div>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+				<tr><td height="300">
+					<div class="blank10"></div>
+					<div class="list">
+						<ul>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>333) ,'')}">学校简介</a></li>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>334) ,'')}">招生简章</a></li>
+						</ul>
+					</div>
+					
+				</td></tr>
+			</table>
+</if>
+
+<!--中国美院成人招考-->
+<if condition="($left_index eq 332)">
+	<div class="index-left-title title-font">中国美院成人招考</div>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+				<tr><td height="300">
+					<div class="blank10"></div>
+					<div class="list">
+						<ul>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>6) ,'')}">成考介绍</a></li>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>7) ,'')}">成考答疑</a></li>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>8) ,'')}">联系方式</a></li>
+						</ul>
+					</div>
+					
+				</td></tr>
+			</table>
+</if>
+
+
+<!--中国美院福建校友会-->
+<if condition="($left_index eq 3)">
+	<div class="index-left-title title-font">中国美院福建校友会</div>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+				<tr><td height="300">
+					<div class="blank10"></div>
+					<div class="list">
+						<ul>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>11) ,'')}">校友会章程</a></li>
+							<li><a href="{:U('Home/News/index' ,array('classid'=>5) ,'')}">校友会资讯</a></li>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>12) ,'')}">理事会理事</a></li>
+						</ul>
+					</div>
+					
+				</td></tr>
+			</table>
+</if>
+
+<!--美术报▪福建厦门-->
+<if condition="($left_index eq 333)">
+	<div class="index-left-title title-font">美术报▪福建厦门</div>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+				<tr><td height="300">
+					<div class="blank10"></div>
+					<div class="list">
+						<ul>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>3311) ,'')}">美术报福建艺术中心简介</a></li>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>3312) ,'')}">美术报会员</a></li>
+							<li><a href="{:U('Home/Index/detail' ,array('id'=>3313) ,'')}">美术报会协作体</a></li>
+						</ul>
+					</div>
+					
+				</td></tr>
+			</table>
+</if>	
+
+<!--名家作品展示-->
+<if condition="($left_index eq 5)">
+	<div class="index-left-title title-font">名家作品</div>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+			<tr><td height="300">
+				<div class="blank10"></div>
+				<div class="list">
+					<ul>
+						<volist name='pro_cate' id='vo1'>
+
+								<li><a href="{:U('Home/Product/index' ,array('cateid'=>$vo1['id']) ,'')}">{$vo1.title}</a></li>
+
+								<volist name='vo1.child' id='vo2'>
+									<li>&nbsp;|-- <a href="{:U('Home/Product/index' ,array('cateid'=>$vo2['id']) ,'')}">{$vo2.title}</a></li>
+								</volist>	
+
+						</volist>
+					</ul>
+				</div>
+				
+			</td></tr>
+			<tr><th height=20></th></tr>
+		</table>
+</if>
+
+
+<!--优秀作品展示-->
+<if condition="($left_index eq 6)">
+	<div class="index-left-title title-font">优秀作品欣赏</div>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+			<tr><td height="300">
+				<div class="blank10"></div>
+				<div class="list">
+					<ul>
+						<volist name='pro_cate' id='vo1'>
+
+								<li><a href="{:U('Home/Product2/index' ,array('cateid'=>$vo1['id']) ,'')}">{$vo1.title}</a></li>
+
+								<volist name='vo1.child' id='vo2'>
+									<li>&nbsp;|-- <a href="{:U('Home/Product2/index' ,array('cateid'=> $vo2['id']) ,'')}">{$vo2.title}</a></li>
+								</volist>
+
+						</volist>
+					</ul>
+				</div>
+				
+			</td></tr>
+			<tr><th height=20></th></tr>
+		</table>
+</if>
+
+<!--青年艺术作品展示-->
+<if condition="($left_index eq 7)">
+	<div class="index-left-title title-font">青年艺术家作品</div>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+			<tr><td height="300">
+				<div class="blank10"></div>
+				<div class="list">
+					<ul>
+						<volist name='pro_cate' id='vo1'>
+
+								<li><a href="{:U('Home/Product3/index' ,array('cateid'=>$vo1['id']) ,'')}">{$vo1.title}</a></li>
+
+								<volist name='vo1.child' id='vo2'>
+									<li>&nbsp;|-- <a href="{:U('Home/Product3/index' ,array('cateid'=> $vo2['id']) ,'')}">{$vo2.title}</a></li>
+								</volist>
+
+						</volist>
+					</ul>
+				</div>
+				
+			</td></tr>
+			<tr><th height=20></th></tr>
+		</table>
+</if>
+
+<!--装饰作品-->
+<if condition="($left_index eq 8)">
+	<div class="index-left-title title-font">少儿作品</div>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+			<tr><td height="300">
+				<div class="blank10"></div>
+				<div class="list">
+					<ul>
+						<volist name='pro_cate' id='vo1'>
+
+								<li><a href="{:U('Home/Product4/index' ,array('cateid'=>$vo1['id']) ,'')}">{$vo1.title}</a></li>
+
+								<volist name='vo1.child' id='vo2'>
+									<li>&nbsp;|-- <a href="{:U('Home/Product4/index' ,array('cateid'=> $vo2['id']) ,'')}">{$vo2.title}</a></li>
+								</volist>
+
+						</volist>
+					</ul>
+				</div>
+				
+			</td></tr>
+			<tr><th height=20></th></tr>
+		</table>
+</if>
+
+
+<!--美术报▪福建厦门-->
+<if condition="($left_index eq 334)">
+	<div class="index-left-title title-font">下载中心</div>
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop index-left-list">	
+				<tr><td height="300">
+					<div class="blank10"></div>
+					<div class="list">
+						<ul>
+							
+						</ul>
+					</div>
+					
+				</td></tr>
+			</table>
+</if>	

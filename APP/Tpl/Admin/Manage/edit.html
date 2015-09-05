@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加新用户</title>
+
+<link href="__PUBLIC__/Css/mystyle.css" rel="stylesheet" type="text/css" />
+
+<include file="Common:mhead" />
+
+</head>
+
+<body>
+
+
+<include file="nav" />
+
+
+<br />
+
+<form name="formnews" method="post" action="{:U('Admin/Manage/save' ,'' ,'')}" onsubmit="return check_form()">
+<table border="0" cellpadding="1" cellspacing="1" align="center" class="center main mtable">
+	<tr class="titlebg">
+		<th colspan="2">修改用户密码</th>
+	</tr>
+	
+	<tr>
+		<td width="10%" class="tright">用 户 名 &nbsp;</td>
+		<td width="80%">&nbsp; 
+			{$user.username}
+			<input type="hidden" name="action" value="edit" />
+			<input type="hidden" name="id" value="{$user.id}" />
+		</td>
+	</tr>
+
+	<tr>
+		<td class="tright">密 码 &nbsp;</td>
+		<td>&nbsp; <input type='password' name="password" id="password" size="50" /></td>
+	</tr>
+
+	<tr>
+		<td class="tright">确认密码 &nbsp;</td>
+		<td>&nbsp; <input type='password' name="password2" id="password2" size="50" /></td>
+	</tr>
+
+
+	<tr>
+		<td class="tright" height="50"></td>
+		<td>&nbsp; <input type="submit" value="保存" class="button" /></td>
+	</tr>
+	
+</table>
+</form>
+
+
+<script language="javascript">
+	function check_form(){
+		
+
+		if(objNode('password').value.trim() == '' || objNode('password').value.trim().length < 6){
+			alert('密码必须填写 ,且长度最少6位数');
+			objNode('password').focus();
+			return false;
+		}
+
+		if(objNode('password').value.trim() != objNode('password2').value.trim()){
+			alert('两次输入的密码不一致');
+			objNode('password2').focus();
+			return false;
+		}
+		
+		
+	}
+</script>
+
+
+
+<include file="Common:mfooter" />
+
+
+</body>
+</html>

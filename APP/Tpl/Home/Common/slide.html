@@ -1,0 +1,49 @@
+<if condition="count($hdplist) eq 1">
+	<volist name='hdplist' id='hdp'>
+	
+		<a class='big_pic' href='http://www.caafj.com' ><img id='lunbo_1' src="__PUBLIC__/hdp/images/{$hdp.img1}" width=962 height=225 ></a>
+	</volist>
+<else/>	
+
+<link rel=stylesheet type=text/css href="__PUBLIC__/hdp/1/images/1haodian.css">
+
+
+
+<DIV id="promo_show" class="promo_show">
+<DIV id="index_menu_carousel" class="promo_wrapper">
+<OL class="clearfix">
+
+	<volist name='hdplist' id='hdp'>
+		<li flag="{$i}">
+			<a class='big_pic' href='__PUBLIC__/hdp/images/{$hdp.img1}' >
+				<img id='lunbo_{$i}' src='__PUBLIC__/hdp/1/images/blank.gif' 
+				wi="__PUBLIC__/hdp/images/{$hdp.img1}" si="__PUBLIC__/hdp/images/{$hdp.img1}">
+			</a>
+		</li>
+	</volist>
+
+
+  </OL>
+  </DIV>
+  
+  
+  
+  
+<DIV class="show_num_bg"></DIV>
+	<UL id="lunboNum" class="none">
+	
+	<volist name='hdplist' id='hdp'>
+		<LI <if condition="$i eq 1">class=cur</if> >&#8226;</LI>
+	</volist>	  
+
+	  
+	</UL>
+  	<A class="show_next" href="javascript:void(0);"><S></S></A><A class="show_pre" href="javascript:void(0);"><S></S></A></DIV>
+</DIV>
+</DIV>
+</DIV>
+
+
+<script language="javascript" src="__PUBLIC__/hdp/1/images/1haodian.js"></script>
+
+</if>

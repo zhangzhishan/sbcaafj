@@ -1,0 +1,24 @@
+
+
+
+
+<form name='formex' method='post' action="{:U(GROUP_NAME.'/Kaojixixi/importexcel')}" enctype="multipart/form-data">
+	<div class="main mborder navh tfont14">
+		<input type='file' name='file_stu' id='file_stu'>	
+		<input type='submit' id='doexcel'  value='导入Excel' > &nbsp;&nbsp;
+
+		姓名：
+		<input name='name' value="{$where.name}"  size='10'>
+		编号：
+		<input name='code'  value="{$where.code}"  size='15'>
+		专业：
+		<input name='cate' value="{$where.cate}"  size='10'>
+		出生日期：
+		<input name='date'  value="{$where.date}" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd'})"  size='15'>
+		等级：
+		<input name='level'  value="{$where.level}"   size='5'>
+		
+		<input type='submit' name='search' value='搜索'>
+
+	</div>
+</form>

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加栏目</title>
+
+<link href="__PUBLIC__/Css/mystyle.css" rel="stylesheet" type="text/css" />
+
+<include file="Common:mhead" />
+
+</head>
+
+<body>
+
+
+<include file="nav" />
+
+
+<br />
+
+<form name="formnews" method="post" action="{:U('Admin/Cate/save' ,array('action'=>'edit' ,'id'=>$pro_cate_item['id']) ,'')}" onsubmit="return check_form()">
+<table border="0" cellpadding="1" cellspacing="1" align="center" class="center main mtable">
+	<tr class="titlebg">
+		<th colspan="2">修改分类</th>
+	</tr>
+	
+	<tr>
+		<td width="10%" class="tright">分类名称 &nbsp;</td>
+		<td width="80%">&nbsp; 
+			<input name="title" id="title" size="100" value='{$pro_cate_item.title}' />
+		</td>
+	</tr>
+
+
+	<tr>
+		<td width="10%" class="tright">排序 &nbsp;</td>
+		<td width="80%">&nbsp; 
+			<input name="opx" id="opx" size="10"  value='{$pro_cate_item.opx}' />
+		</td>
+	</tr>	
+
+	<tr>
+		<td class="tright">状 态 &nbsp;</td>
+		<td>&nbsp; 
+			<input type="radio" name="status" value="0" <if condition="($pro_cate_item['status'] eq 0)">checked="checked"</if> /> 启用
+			<input type="radio" name="status" value="1" <if condition="($pro_cate_item['status'] eq 1)">checked="checked"</if> /> 禁用
+		</td>
+	</tr>
+	<tr>
+		<td class="tright" height="50"></td>
+		<td>&nbsp; <input type="submit" value="保存" class="button" /></td>
+	</tr>
+	
+</table>
+</form>
+
+
+<script language="javascript">
+	function check_form(){
+		
+		if(objNode('title').value.trim() == ''){
+			alert('名称必须填写');
+			objNode('title').focus();
+			return false;
+		}
+
+	}
+</script>
+
+
+
+<include file="Common:mfooter" />
+
+
+</body>
+</html>

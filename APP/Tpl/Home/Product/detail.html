@@ -1,0 +1,51 @@
+
+<include file="Common:header" />
+
+<include file="Common:index_top" />
+
+<table width="962" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop">
+	<tr>
+		<td width="227" class='index-left-block'><include file="Common:index_left" /></td>
+		<td width="12"></td>
+		<td width="723" class='index-right-block'>
+			<div class="index-right-title title-font">{$right_title_text}</div>
+			
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop">	
+				<tr><td class="about-text">
+
+					<!-- <div class='pre-and-next'><< 上一页  &nbsp;&nbsp; 下一页 >></div> -->
+
+
+					<div class='pre-and-next'>
+						<if condition="$previd neq 0">
+						<a href="{:U(GROUP_NAME.'/Product/detail',array('id'=> $previd ))}"><< 上一页</a>  &nbsp;&nbsp; 
+						</if>
+						<if condition="$nextid neq 0">
+						<a href="{:U(GROUP_NAME.'/Product/detail',array('id'=> $nextid))}">下一页 >></a>
+						</if>
+					</div>
+
+
+					<div class='tcenter'><img src="{$pro.img1|is_file_exists=### ,2}"></div>
+					<div class='tbold pt10'>名称：{$pro.title}</div>
+					<div class='tbold'>描述：</div>
+					<div>{$pro.text}</div>
+
+				</td></tr>
+			</table>	
+
+			<div>
+				
+
+			</div>
+
+			
+	
+		</td>
+	</tr>
+</table>
+
+<include file="Common:index_footer" />
+
+
+

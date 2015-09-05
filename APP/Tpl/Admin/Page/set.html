@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>页面信息</title>
+
+<link href="__PUBLIC__/Css/mystyle.css" rel="stylesheet" type="text/css" />
+
+<include file="Common:mhead" />
+
+</head>
+
+<body>
+
+
+<form name="formnews" method="post" action="{:U('Admin/Page/saveset' ,'' ,'')}">
+<table border="0" cellpadding="1" cellspacing="1" align="center" class="center main mtable">
+	<tr class="titlebg">
+		<th colspan="4">网站参数设置</th>
+	</tr>
+	
+	<tr>
+		<td width="12%" class="tright">网站标题 &nbsp;</td>
+		<td width="38%">&nbsp; 
+			<input name="HJwebtitle" id="HJwebtitle" size="50" value="{$webconfig.HJwebtitle}" />
+		</td>
+		<td width="12%" class="tright"> &nbsp;</td>
+		<td width="38%">&nbsp; </td>
+	</tr>
+	
+	<tr>
+		<td class="tright">版权信息 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebbq" id="HJwebbq" size="50" value="{$webconfig.HJwebbq}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	
+	<tr>
+		<td class="tright">公司名称 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebcompany" id="HJwebcompany" size="50" value="{$webconfig.HJwebcompany}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	
+	<tr>
+		<td class="tright">网站网址 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebsite" id="HJwebsite" size="50" value="{$webconfig.HJwebsite}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	
+	<tr>
+		<td class="tright">联系电话 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebphone" id="HJwebphone" size="50" value="{$webconfig.HJwebphone}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	
+	<tr>
+		<td class="tright">联系手机 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebmobile" id="HJwebmobile" size="50" value="{$webconfig.HJwebmobile}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	
+	<tr>
+		<td class="tright">联系传真 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebfax" id="HJwebfax" size="50" value="{$webconfig.HJwebfax}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	
+	<tr>
+		<td class="tright">Email &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebemail" id="HJwebemail" size="50" value="{$webconfig.HJwebtitle}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	
+	<tr>
+		<td class="tright">联 系 人 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebcontact" id="HJwebcontact" size="50" value="{$webconfig.HJwebcontact}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	<tr>
+		<td class="tright">联系地址 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebaddress" id="HJwebaddress" size="50" value="{$webconfig.HJwebaddress}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	
+	<tr>
+		<td class="tright">邮  编 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebpost" id="HJwebpost" size="50" value="{$webconfig.HJwebpost}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	<tr>
+		<td class="tright">ICP备案 &nbsp;</td>
+		<td>&nbsp; 
+			<input name="HJwebba" id="HJwebba" size="50" value="{$webconfig.HJwebba}" />
+		</td>
+		<td class="tright"> &nbsp;</td>
+		<td>&nbsp; </td>
+	</tr>
+	
+	<tr>
+		<td class="tright">关键字 &nbsp;</td>
+		<td colspan="3">&nbsp; <input name="HJwebkeywords" id="HJwebkeywords" size="100" value="{$webconfig.HJwebkeywords}" /></td>
+	</tr>
+	<tr>
+		<td class="tright">网站描述 &nbsp;</td>
+		<td colspan="3">&nbsp; <textarea name="HJwebdescription" id="HJwebdescription" class="textarea">{$webconfig.HJwebdescription}</textarea></td>
+	</tr>
+	
+	<tr>
+		<td class="tright">底部信息 &nbsp;</td>
+		<td colspan="3">&nbsp; <textarea name="HJwebfooter" id="HJwebfooter" class="textarea">{$webconfig.HJwebfooter}</textarea>
+			换行加&lt;br&gt;
+		</td>
+	</tr>
+	
+	
+
+
+	<tr>
+		<td class="tright" height="50"></td>
+		<td colspan="3">&nbsp; <input type="submit" value="保存" class="button" /></td>
+	</tr>
+	
+</table>
+</form>
+
+
+
+
+<include file="Common:mfooter" />
+
+
+</body>
+</html>

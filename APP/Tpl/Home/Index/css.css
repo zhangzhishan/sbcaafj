@@ -1,0 +1,89 @@
+/* CSS Document */
+
+
+body{ background-color:#f7f2db; color:#666666; font-size:12px;}
+
+.ttop ,.ttop td{ vertical-align:top;}
+
+#mypage{padding-top: 20px;}
+#mypage span{padding: 5px 10px;border: 1px solid #B08447; margin-left: 10px;cursor: pointer;font-size: 14px;}
+#mypage span.cur{background-color: #B98949;color: #fff;}
+
+
+
+.middle-out{display:block;width:120px;height:120px;position: relative;display: table-cell;vertical-align:middle;border:1px solid #ccc;text-align:center;}
+.middle-in{display:block;position:static;*position:absolute;top:50%;}
+.middle-out .middle-in img{position:static;*position:relative;top:-50%;left:-50%;}
+
+
+
+
+.index-top{ background:url(../images/index_02.jpg) repeat-x; height:32px; line-height:32px;}
+.index-top-td1{ text-indent:10px;}
+.index-top-td2{ text-align:right;}
+.index-top-td2 span{ margin-right:15px;}
+
+a:link ,a:visited{ color:#666666; text-decoration:none;}
+a:hover{ color:#ff6600;}
+
+.pre-and-next{ text-align: center;line-height: 30px;font-weight: bold; padding-bottom: 15px;}
+
+
+.index-menu-block{ width:962px; background:url(../images/index_07.jpg) no-repeat; height:56px; margin:0 auto;}
+.index-menu{ height:35px; line-height:35px; text-align:center; color:white; font-size:14px; font-weight:bold;}
+.index-menu a{ color:white; text-decoration:none;}
+.index-menu a:hover{ color:#ff6600;}
+
+.more{ font-size:12px; float:right; font-weight:100; margin-right:15px;}
+
+
+.title-font{text-indent:27px; font-size:14px; font-weight:bold;}
+
+
+.index-left-block{border:1px solid #f1e9c3;background-color:#fff6cb;}
+.index-left-title{ background:url(../images/index_11.jpg) no-repeat; height:40px; line-height:40px;width: 227px;}
+.index-left-list{ border:0px solid #f1e9c3;background-color:#fff6cb;}
+.index-left-list .list{ width:92%; margin:0 auto;}
+.index-left-list .list li{ list-style:none; line-height:310%; background:url(../images/index_dot.gif) repeat-x bottom; text-indent:5px; font-size:14px;}
+
+
+.index-right-block{border:1px solid #f1e9c3;background-color:#fff6cb;}
+.index-right-title{ background:url(../images/index_28.jpg) no-repeat; height:40px; line-height:40px;width:723px;}
+
+.index-about{ border:1px solid #f1e9c3; background-color:#fff6cb; overflow:hidden; height:220px;}
+.index-about span{ float:left; margin:10px;}
+.index-about div{ line-height:175%; padding:10px 10px 0 0; font-size:13px; text-align:justify;}
+
+
+.index-btn{ text-align:center;margin-top:20px; margin-bottom:30px;}
+
+.index-product-list{ border:1px solid #f1e9c3; background-color:#fff6cb; height:165px;}
+.index-product-list .btn{ margin-top:15px;}
+
+.index-footer{border:1px solid #f1e9c3; background-color:#fff6cb; height:120px; width:962px; text-align:center; line-height:180%; border-top:5px solid #a37f4b; color:#9b9b9b;}
+.index-footer a{ color:#9b9b9b !important;}
+.index-link{ padding:10px;}
+.index-link span{ font-size:14px; color:#a37f4b;}
+
+/*.index-scroll img{margin-left: 10px;}*/
+
+.more a{ text-decoration:none !important; color:#333333;}
+.more a:hover{ color:#ff6600;}
+
+
+
+.about-text{ border:0px solid #f1e9c3; background-color:#fff6cb; overflow:hidden; line-height:200%; padding:15px 20px;}
+
+.newslist td{ background:url(../commonimages/arrow.gif) no-repeat 5px 13px; line-height:300%;}
+.newslist td div{background:url(../commonimages/index_dot.gif) repeat-x bottom; text-indent:20px; font-size:14px;}
+.newslist td div span{ float:right; margin-right:10px;}
+
+.news-detail-title{ text-align:center; font-size:14px; font-weight:bold; padding-bottom:10px;}
+.news-detail-date{ border-bottom:1px solid #AE8245; text-align:center; padding-bottom:5px;}
+
+.productlist td{ text-align:center;}
+
+.kaojiresult th{text-align: left;}
+#iContent {
+font-size:14px;
+}

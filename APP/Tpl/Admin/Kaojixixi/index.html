@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>查询信息管理</title>
+
+<link href="__PUBLIC__/Css/mystyle.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/themes/default/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/js/themes/icon.css" />
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.easyui.min.js"></script>
+
+
+<include file="Common:mhead" />
+<script language="javascript" type="text/javascript" src="http://www.caafj.com/Public/My97DatePicker/WdatePicker.js"></script>
+
+<body>
+
+
+
+<include file="nav" />
+
+
+<br />
+
+<table border="0" cellpadding="1" cellspacing="1" align="center" class="center main mtable">
+	<tr class="titlebg">
+		<th></th>
+		<th></th>
+		<th>ID</th>
+		<th>编号</th>
+		<th>姓名</th>
+		<th>性别</th>
+		<th>出生日期</th>
+		<th>民族</th>
+		<th>专业</th>
+		<th>等级</th>
+		<th>成绩</th>
+		<th>操作</th>
+	</tr>
+	
+	<volist name='list' id='vo' key='k'>
+	<tr>
+		<td class="tcenter"><input type="checkbox" name="lid" value="{$vo.id}" /></td>
+		<td class="tcenter">{$k}</td>
+		<td class="tcenter">{$vo.id}</td>
+		<td class="tcenter">{$vo.code}</td>
+		<td> &nbsp;{$vo.name}</td>
+		<td class="tcenter">
+				<if condition="$vo['sex'] eq '0'">男<else/>女</if>
+		</td>
+		<td class="tcenter">{$vo.date|date='Y-m-d' ,###}</td>
+		<td class="tcenter">{$vo.national}</td>
+		<td class="tcenter">{$vo.cate}</td>
+		<td class="tcenter">{$vo.level}</td>
+		<td class="tcenter">{$vo.result}</td>
+
+
+		<td class="tcenter">
+			<a href="{:U('Admin/Kaojixixi/update',array('action'=>'edit' ,'id'=>$vo['id'] ,'classid'=>$classid) ,'')}" class="iblue">修改</a> &nbsp; 
+		<!--<a href="{:U('Admin/News/handle',array('action'=>'del' ,'id'=>$vo['id'] ,'classid'=>$classid) ,'')}" class="iblue"
+			 onclick="if(confirm('是否真的删除该数据？'))return true;return false;">删除</a> -->
+		</td>
+
+
+	</tr>
+	</volist>
+
+	
+</table>
+
+<br />
+
+
+<div class="main mborder navh tfont14">
+	<form name='formdel' method='post' action='{:U(GROUP_NAME ."/Kaojixixi/delete")}'>
+	<table>
+		<tr>
+			<td>
+				<input type='checkbox' name='chkall' id='chkall'>全选  
+				<input type='submit' name='btndel' id='btndel' value='删除选中项'>
+				<input type='button' name='delall' id='delall' value='删除所有数据'>
+			</td>
+			<td><if condition="($pagecount gt C('PAGECOUNT'))"><div class="result page">{$page}</div></if></td>
+		</tr>
+	</table>
+	<input type='hidden' name='idlist' id='idlist'>
+	</form>
+</div>
+
+
+<include file="Common:mfooter" />
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	$('#chkall').click(function(){
+
+		if($(this).attr('checked')){
+			$('input[name=lid]').attr('checked' ,true);
+		} else {
+			$('input[name=lid]').attr('checked' ,false);
+		}
+	});
+
+	$('#btndel').click(function(){
+
+		var value = '0';
+		$('input[name=lid]').each(function(i){
+
+			if($(this).attr('checked')) value += ',' + $(this).val();
+		});
+		
+		if(value == '0'){
+			alert('请选择要删除项');
+			return false;
+		}
+
+		$('#idlist').val(value);	
+
+		if(confirm('是否真的删除该数据？')){
+			return true;
+		} else{
+			return false;
+		}
+
+		
+
+		//alert(value);
+
+		//location.href= "{:U(GROUP_NAME . '/Kaojixixi/delete' ,'' ,'')}/idlist/" + value;
+
+	});
+
+
+	$('#delall').click(function(){
+
+		if(confirm('注意：是否真的【删除所有数据】？删除后将不可恢复，请谨慎操作')){
+			location.href="{:U(GROUP_NAME . '/Kaojixixi/delete' ,array('flag' => 'all') ,'')}";
+		} else{
+			return false;
+		}
+	});
+
+	$('#doexcel').click(function(){
+		if($('#file_stu').val() == ''){alert('请选择excel文档');return false;}
+	})
+
+</script>

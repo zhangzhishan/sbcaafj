@@ -1,0 +1,10 @@
+
+
+<div class="main mborder navh tfont14">
+	<a href="{:U('Admin/News/index' ,array('action' => 'list' ,'classid' => $classid ) ,'')}" 
+	<if condition="($curpage eq 'list' || $curpage eq '')">class="cur"</if>>内容列表</a> &nbsp;&nbsp;
+	
+	<a href="{:U('Admin/News/index' ,array('action' => 'add'  ,'classid' => $classid ) ,'')}" 
+	<if condition="($curpage eq 'add')">class="cur"</if>>内容添加</a>
+</div>
+

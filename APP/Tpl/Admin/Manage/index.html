@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户信息管理</title>
+
+<link href="__PUBLIC__/Css/mystyle.css" rel="stylesheet" type="text/css" />
+
+<include file="Common:mhead" />
+
+</head>
+
+<body>
+
+
+
+<include file="nav" />
+
+
+<br />
+
+<table border="0" cellpadding="1" cellspacing="1" align="center" class="center main mtable">
+	<tr class="titlebg">
+		<th width='5%'>编号</th>
+		<th>用户名</th>
+		<!--<th>最后登录IP</th>-->
+		<th>最后登陆时间</th>
+		<th>操作</th>
+	</tr>
+	
+	<volist name='list' id='vo' key='k'>
+	<tr>
+		<td class="tcenter">{$k}</td>
+		<td> &nbsp;{$vo.username}</td>
+		<!--<td> &nbsp;{$vo.lastloginip}</td>-->
+		<td> &nbsp;{$vo.lastlogindate}</td>
+		<td class="tcenter">
+			<a href="{:U('Admin/Manage/index',array('action'=>'edit' ,'id'=>$vo['id'] ) ,'')}" class="iblue">修改</a> &nbsp; 
+			<a href="{:U('Admin/Manage/handle',array('action'=>'del' ,'id'=>$vo['id'] ) ,'')}" class="iblue"
+			 onclick="if(confirm('是否真的删除该数据？'))return true;return false;">删除</a>
+		</td>
+	</tr>
+	</volist>
+
+	
+</table>
+
+
+<include file="Common:mfooter" />
+
+</body>
+</html>

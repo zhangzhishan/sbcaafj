@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>产品类别</title>
+
+<link href="__PUBLIC__/Css/mystyle.css" rel="stylesheet" type="text/css" />
+
+<include file="Common:mhead" />
+
+</head>
+
+<body>
+
+
+
+<include file="nav" />
+
+
+<br />
+
+<form name='formcate' method='post' action="{:U(GROUP_NAME . '/Cate/sorts' ,array('classid'=>$classid))}">
+<table border="0" cellpadding="1" cellspacing="1" align="center" class="center main mtable">
+		<tr class="titlebg">
+			<th width='5%'>编号</th>
+			<th width='5%'>ID</th>
+			<th>名称</th>
+			<th>排序</th>
+			<th>状态</th>
+			<th>操作</th>
+		</tr>
+	
+	<volist name='pro_cate' id='vo1' key='k'>
+
+			<tr>
+				<td class='tcenter'>{$k}</td>
+				<td class='tcenter'>{$vo1.id}</td>
+				<td> &nbsp; {$vo1.title}</td>
+				<td class='tcenter'><input name='{$vo1.id}' value='{$vo1.opx}' size='5'></td>
+				<td class='tcenter'>
+					<if condition="($vo1['status']) eq 0">
+						<span class='igreen'>已启用</span>
+					<else/>
+						<span class='ired'>已禁用</span>
+					</if>	
+				</td>
+				<td class='tcenter'>
+					<a class='iblue' href="{:U('Admin/Cate/index'  ,array('action'=>'edit' ,'id'=>$vo1['id'] ,'classid'=>$classid) ,'')}">修改</a> &nbsp; 
+					<a class='iblue' href="{:U('Admin/Cate/handle' ,array('action'=>'del' ,'id'=>$vo1['id'] ,'classid'=>$classid) ,'')}" onclick="if(confirm('是否真的删除该数据？'))return true;return false;">删除</a>
+				</td>
+			</tr>
+
+			
+			<!--二级类别开始-->
+			<volist name="vo1.child" id='vo2' >
+					<tr>
+						<td class='tcenter'></td>
+						<td class='tcenter'>{$vo2.id}</td>
+						<td style='text-indent:25px;'> |--&nbsp; {$vo2.title}</td>
+						<td class='tcenter'><input name='{$vo2.id}' value='{$vo2.opx}' size='5'></td>
+						<td class='tcenter'>
+							<if condition="($vo2['status']) eq 0">
+								<span class='igreen'>已启用</span>
+							<else/>
+								<span class='ired'>已禁用</span>
+							</if>
+						</td>
+						<td class='tcenter'>
+							<a class='iblue' href="{:U('Admin/Cate/index'  ,array('action'=>'edit' ,'id'=>$vo2['id'],'classid'=>$classid) ,'')}">修改</a> &nbsp; 
+							<a class='iblue' href="{:U('Admin/Cate/handle' ,array('action'=>'del' ,'id'=>$vo2['id'],'classid'=>$classid) ,'')}" onclick="if(confirm('是否真的删除该数据？'))return true;return false;">删除</a>
+						</td>
+					</tr>
+			</volist>
+			<!--二级类别结束-->
+
+
+	</volist>
+		<tr><td colspan='6'> &nbsp;
+			<input type='submit' value='排序'>
+		</td></tr>
+</table>
+</form>
+<br />
+
+
+
+<include file="Common:mfooter" />
+
+</body>
+</html>

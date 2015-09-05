@@ -1,0 +1,1 @@
+<?php	return array ( 0 => array ( 'id' => '1', 'title' => '作品类别1', 'parentid' => '0', 'opx' => '0', 'status' => '0', ), 1 => array ( 'id' => '3', 'title' => '二级类别22', 'parentid' => '1', 'opx' => '0', 'status' => '0', ), );?>

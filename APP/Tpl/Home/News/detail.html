@@ -1,0 +1,35 @@
+
+<include file="Common:header" />
+
+<include file="Common:index_top" />
+
+<table width="962" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop">
+	<tr>
+		<td width="227" class='index-left-block'><include file="Common:index_left" /></td>
+		<td width="12"></td>
+		<td width="723" class='index-right-block'>
+			<div class="index-right-title title-font">{$right_title_text}</div>
+			
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop">	
+				<tr><td  class="about-text">
+					<div class="news-detail-title">{$vo.title}</div>
+					<div class="news-detail-date">
+						<if condition='$vo["classid"] neq 2'>
+							日期：{$vo.odate|date='Y-m-d' ,###}  &nbsp;&nbsp;&nbsp; 
+							<!-- 浏览：{$vo.hits|intval} -->
+						</if>
+					</div>
+					<div class="pt10" id="iContent">
+						{$vo.text|stripslashes}
+						<!--<a  style="border:1px solid #A37F4B; padding:1px 8px;cursor:pointer; font-weight:900; display:block; float:left; margin:10px 0px;;" onclick="window.history.back(-1);" >返回</a>-->
+					</div>
+				</td></tr>
+			</table>	
+
+			
+	
+		</td>
+	</tr>
+</table>
+
+<include file="Common:index_footer" />

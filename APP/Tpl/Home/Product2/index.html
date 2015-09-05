@@ -1,0 +1,48 @@
+
+<include file="Common:header" />
+
+<include file="Common:index_top" />
+
+<table width="962" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop">
+	<tr>
+		<td width="227" class='index-left-block'><include file="Common:index_left" /></td>
+		<td width="12"></td>
+		<td width="723" class='index-right-block'>
+			<div class="index-right-title title-font">{$right_title_text}</div>
+			
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop">	
+				<tr><td  class="about-text">
+
+						<table width="95%" cellpadding="0" cellspacing="0" border="0" align="center" class="center ttop productlist">	
+							<tr>
+								<volist name='list' id='vo' mod='4' empty='暂无数据'>
+									<td style='text-align:center'>
+										<div class='middle-out'><div class='middle-in'>
+											<a href="{:U('Home/Product2/detail' , array('id'=>$vo['id']) ,'')}">
+											<img src='{$vo.img1|is_file_exists=###}' ></a>
+										</div></div>
+										<div style='width:130px; margin-left:0'><a href="{:U('Home/Product2/detail' , array('id'=>$vo['id']) ,'')}">{$vo.title|msubstr=0 ,13}</a></div>
+									</td>
+									<eq name='mod' value='3'></tr><tr><td colspan='4' height='20'></td><tr></eq>	
+								</volist>	
+							</tr>
+						</table>
+
+						<br />
+
+						<if condition="($pagecount gt C('PAGECOUNT'))">
+							<div class="main mborder navh tfont14">
+								<div class="result page">{$page}</div>
+							</div>
+						</if>
+						
+				</td></tr>
+			</table>	
+
+			
+	
+		</td>
+	</tr>
+</table>
+
+<include file="Common:index_footer" />

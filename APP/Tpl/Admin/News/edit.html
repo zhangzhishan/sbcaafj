@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻信息</title>
+
+<link href="__PUBLIC__/Css/mystyle.css" rel="stylesheet" type="text/css" />
+
+<include file="Common:mhead" />
+
+</head>
+
+<body>
+
+
+<include file="nav" />
+
+
+<br />
+
+<form name="formnews" method="post" action="{:U('Admin/News/save' ,array('action'=>'edit') ,'')}" onsubmit="return check_form()">
+<table border="0" cellpadding="1" cellspacing="1" align="center" class="center main mtable">
+	<tr class="titlebg">
+		<th colspan="2">修改信息</th>
+	</tr>
+	
+	<tr>
+		<td width="10%" class="tright">名 称 &nbsp;</td>
+		<td width="80%">&nbsp; 
+			<input name="title" id="title" size="100" value="{$vo.title}" />
+			<input type="hidden" name="classid" value="{$classid}" />
+			<input type="hidden" name="id" value="{$vo.id}" />
+		</td>
+	</tr>
+
+	<tr>
+		<td class="tright">日 期 &nbsp;</td>
+		<td>&nbsp; <input name="odate" size="30" value="{$vo.odate|date='Y-m-d H:i:s' ,###}"/></td>
+	</tr>	
+	<tr>
+		<td class="tright">内 容 &nbsp;</td>
+		<td>
+		
+			<script type="text/javascript" charset="utf-8" src="{:C('editurl')}/Public/ueditor/ueditor.config.js"></script>
+			<script type="text/javascript" charset="utf-8" src="{:C('editurl')}/Public/ueditor/ueditor.all.js"></script>
+		
+										
+			<script type="text/plain" id="myEditor" name="text">{$vo.text|stripslashes}</script>
+			<script type="text/javascript">
+				
+				UE.getEditor('myEditor',{
+					//这里可以选择自己需要的工具按钮名称,此处仅选择如下五个
+				   // toolbars:[['FullScreen', 'Source', 'Undo', 'Redo','Bold','test']],
+					//focus时自动清空初始化时的内容
+					//autoClearinitialContent:true,
+					//关闭字数统计
+					wordCount:false,
+					//关闭elementPath
+					elementPathEnabled:false,
+					//默认的编辑区域高度
+					initialFrameHeight:280,
+					initialFrameWidth:900,
+					autoHeightEnabled:false
+					//更多其他参数，请参考ueditor.config.js中的配置项
+
+				})
+				
+
+				
+			</script>
+		
+		</td>
+	</tr>
+	<tr>
+		<td class="tright">状 态 &nbsp;</td>
+		<td>&nbsp; 
+			<input type="radio" name="status" value="0" <if condition='($vo.status eq 0)'>checked="checked"</if> /> 启用
+			<input type="radio" name="status" value="1" <if condition='($vo.status eq 1)'>checked="checked"</if> /> 禁用
+		</td>
+	</tr>
+	<tr>
+		<td class="tright" height="50"></td>
+		<td>&nbsp; 
+			<input type="submit" value="保存" class="button" /> &nbsp;
+			<input type="button" value="返回" class="button" onclick="history.go(-1)" />
+		</td>
+	</tr>
+	
+</table>
+</form>
+
+<script language="javascript">
+	function check_form(){
+		
+		if(objNode('title').value.trim() == ''){
+			alert('名称必须填写');
+			objNode('title').focus();
+			return false;
+		}
+		
+		if(!UE.getEditor('myEditor').hasContents()){
+			alert('内容不能为空');
+			UE.getEditor('myEditor').focus();
+			return false;
+		}
+		
+	}
+</script>
+
+
+
+<include file="Common:mfooter" />
+
+
+</body>
+</html>
