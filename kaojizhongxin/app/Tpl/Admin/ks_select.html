@@ -12,6 +12,8 @@
             <th>开始时间</th>
             <th>结束时间</th>
             <th>开启状态</th>
+            <th>创建人</th>
+            <th>创建时间</th>
             <th>操作</th>
           </tr>
         </thead>
@@ -24,6 +26,8 @@
             <td>{$vo.k_time}</td>
             <td>{$vo.j_time}</td>
             <td>{$vo['on_off']=='true'?'开启':'关闭'}</td>
+            <td>{$vo.create_user}</td>
+            <td>{$vo.create_time}</td>            
             <td>
             	<button onclick="bm_dele({$vo.bm_id},'kshd')" type="button" class="btn btn-default">删除</button>
                 <button onClick="bm_load('ks_update/id/{$vo.bm_id}')"  type="button" class="btn btn-default">修改</button>
