@@ -61,14 +61,16 @@ class HomeAction extends Action {
         $data['ks_time'] = $this->_post('ks_time');
         $result = $Kshd->where("bm_id={$this->_post('kshd_id')}")->save($data);
         // echo $result;
-        if ($result) {
+        // var_dump($data);
+        // if ($result != '') {
             $this->kshd_qr_sele($this->_post());
-         $_SESSION['cf']=1;
-            # code...
-        }
-        else{
-            $Kshd->getError();
-        }
+            $_SESSION['cf']=1;
+
+        //     # code...
+        // }
+        // else{
+        //     $Kshd->getError();
+        // }
         
         // $name1->where("id=$id")->save($data);
            
