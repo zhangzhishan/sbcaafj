@@ -105,9 +105,9 @@ class HomeAction extends Action {
             if($result) {
 				//print_r($this->_post());
 				 $this->data =$this->_post();
-				 $list = $ksbm->relation('kshd')->where("id in ($result)")->order('bm_zy,bm_level desc')->select();
+				 $list = $ksbm->relation('kshd')->where("id = ($result)")->order('bm_zy,bm_level desc')->select();
 				 $this->data = $list;
-
+                // var_dump($this->data);
                  $this->display('myprint');
             }else{
                 //$this->show('写入错误！');
