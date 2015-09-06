@@ -1,4 +1,4 @@
-<div style="width:210mm; height:297mm" class="my_show">
+<div style="width:210mm; height:267mm" class="my_show">
 <meta name="renderer" content="webkit">
         <style>
             td {
@@ -8,13 +8,13 @@
             #print_contetn {
                 background-color: #fff;
                 width: 210mm;
-                height: 297mm;
+                height: 267mm;
             }
             
             .my_show {
                 background-color: #fff;
                 width: 210mm;
-                height: 297mm;
+                height: 267mm;
             }
             
             .g4 {
@@ -44,8 +44,8 @@
             }
             
             .row {
-                margin-right: none;
-                margin-left: none;
+                margin-right: 0;
+                margin-left: 0;
             }
             
             .body_sb {
@@ -99,42 +99,8 @@
     $("#rq").html(ry[0] + "年" + ry[1] + "月" + ry[2] + "日");
 
 
-    var options = {
-        pagesplit: true
-    };
-
-    function ff(a) {
-        if (a >= 10) {
-            return;
-        };
-        a = a + 1;
-        console.log(a);
-        ff(a);
-
-    };
-
-    function printbypage(pdf, k) {
-        if (k >= $('.my_show').length) {
-            // pdf.output('dataurlnewwindow');
-            pdf.save('准考证.pdf');
-        }
-        pdf.addHTML($('.my_show')[k], function() {
-            if (k < $('.my_show').length - 1) {
-                pdf.addPage();
-            }
-
-            printbypage(pdf, k + 1);
-        });
-    };
-
     function dy() {
         $(".my_show").jqprint();
-        // var pdf = new jsPDF('p', 'mm', 'a4');
-        // var print_content = $('.my_show');
-        // var filename = '准考证.pdf';
-        // var page = print_content.length;
-        // printbypage(pdf, 0);
-
 
     };
 
@@ -148,7 +114,7 @@
                 <img id="lunbo_1" src="__PUBLIC__/images/b1.jpg" width="400">
             </div>
             <!-- <div class="row body_sb" style="margin-top:30px;"> -->
-            <div class="row body_sb">
+            <div class="row body_sb" style="padding-top: 2px">
                 <!-- <div class="col-sm-6 col-sm-offset-3"> -->
                 <table class="t1" style="border-collapse:collapse" border="1">
                     <tr>
@@ -203,7 +169,6 @@
                             <br /> 5、附：近期同底正面免冠 1 寸照片三张，照片背后需写上考生姓名。
                         </div>
                     </td>
-                    </tr>
                 </table>
                 <div style="margin-left:20mm;">
                 </div>
@@ -216,10 +181,10 @@
                 <div style='text-align:center; '>"; $name="1"; }else{ $name=""; echo "
                     <div style='page-break-after: always;text-align:center;'>"; }
             </php>
-            <div style="margin:auto; width: 148mm;; height:538px; border:1px solid #000;">
+            <div style="margin:auto; width: 148mm; height:434px; border:1px solid #000;">
                 <h2>中国美术学院美术等级考试</h2>
                 <h1>准考证</h1>
-                <div style="padding:70px 1px">\
+                <div style="padding:0px 1px;height:200px">
                     <div class="v3" style="text-align:left; width:300px; float:left;">
                         <div>姓&nbsp;&nbsp;&nbsp;&nbsp;名<span>&nbsp;{$vo.bm_name}&nbsp;</span></div>
                         <div>准考证号<span>&nbsp;{$vo.bm_cell}&nbsp;</span></div>
@@ -228,12 +193,12 @@
                         <div>考试时间<span>&nbsp;{$vo.kshd.ks_time}&nbsp;</span></div>
                         <div>考试地点<span style=" border-bottom:1px solid #000;">{$vo.bm_kjj}</span></div>
                     </div>
-                    <div class="v4" style="padding-left: 20px">
+                    <div class="v4" style="padding-left: 20px ">
                         <div class="v44" style="width:26mm;height:36mm;border:1px solid #000;line-height:127px;margin:0 2px;">照片</div>
                         中国美术学院
                         <br /> 社会美术考级中心
                     </div>
-                    <img src="__PUBLIC__/images/b77.png" style="width: 170px; position: relative;top: -120px;left: -30%;">
+                    <img src="__PUBLIC__/images/b77.png" style="width: 170px; position: absolute;top: 791px;left: 291px;">
                 </div>
             </div>
 
@@ -242,3 +207,4 @@
     </div>
     </div>
 <input type="button" style="text-align:center; margin:auto;" class="btn btn-default" onclick="dy()" value="打印" />
+<a style="text-align:center; margin:auto;" class="btn btn-default" href="./Home?act=1" > 继续报名</a>
