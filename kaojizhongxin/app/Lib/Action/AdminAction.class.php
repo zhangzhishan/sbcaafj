@@ -260,19 +260,41 @@ public function download_index(){
 		}
 		//考生报名更新
 		public function  ksbm_update(){
-		 $Zygl   =   M('Zygl');
-		 $list1 = $Zygl->select();
-		 $id=$this->_get("id");
-		 $ksbm   =   M('ksbm');
-		 $list = $ksbm->where('id='.$id)->select();
-		 $kjj  =M('kjj');
-		 $list2=$kjj->where('bm_id='.$list[0]['bm_kjj_id'])->select();
-		 //$this->show(print_r($list));
-		// print_r($list2);
-		 $this->data=$list1;
-		 $this->data2=$list2;
-		 $this->data3= $list[0];
-         $this->display('ksbm_update');
+
+            $id=$this->_get("id");
+            $stu_info = D('ksbm')->where("id=".$id)->select();
+            $stu_info = $stu_info[0];
+            $stu_status = $stu_info['bm_kszt'];
+            $exam_id = $stu_info['kshd_id'];
+            $exam_info = D('kshd')->where("bm_id=".$exam_id)->select();
+            $exam_info = $exam_info[0];
+            $exam_ison = $exam_info['on_off'];
+            $exam_time = $exam_info['ks_time'];
+            $event_start_time = $exam_info['k_time'];
+            $event_end_time = $exam_info['j_time'];
+
+            if ($_SESSION['zt'] == 2 && ($stu_status != 0 or $exam_ison == false or strtotime($exam_time) > strtotime($event_end_time) or strtotime($exam_time) < strtotime($event_start_time))) {
+            # code...
+            // $this->show($exam_id);
+                $this->show("考生资料已确认，无法修改。如需修改请联系福建考级中心。");
+            }
+            else
+            {
+                $Zygl   =   M('Zygl');
+             $list1 = $Zygl->select();
+             
+             $ksbm   =   M('ksbm');
+             $list = $ksbm->where('id='.$id)->select();
+             $kjj  =M('kjj');
+             $list2=$kjj->where('bm_id='.$list[0]['bm_kjj_id'])->select();
+             //$this->show(print_r($list));
+            // print_r($list2);
+             $this->data=$list1;
+             $this->data2=$list2;
+             $this->data3= $list[0];
+             $this->display('ksbm_update');
+            }
+		 
 		}
 	//考生报名确认
 	public function kshd_update_ac(){
@@ -481,7 +503,24 @@ public function download_index(){
 		$name = $this->_post('name');
 		$id	  =	$this->_post('id');
 		$name1 = M($name);
-		if($name1->delete($id)){
+        $stu_info = D('ksbm')->where("id=".$id)->select();
+        $stu_info = $stu_info[0];
+        $stu_status = $stu_info['bm_kszt'];
+        $exam_id = $stu_info['kshd_id'];
+        $exam_info = D('kshd')->where("bm_id=".$exam_id)->select();
+        $exam_info = $exam_info[0];
+        $exam_ison = $exam_info['on_off'];
+        $exam_time = $exam_info['ks_time'];
+        $event_start_time = $exam_info['k_time'];
+        $event_end_time = $exam_info['j_time'];
+        // var_dump($_SESSION);
+        // var_dump($exam_info);
+        if ($_SESSION['zt'] == 2 && ($stu_status != 0 or $exam_ison == "false" or strtotime($exam_time) > strtotime($event_end_time) or strtotime($exam_time) < strtotime($event_start_time))) {
+            # code...
+            // $this->show($exam_id);
+            $this->show("alert('考生资料已确认，无法删除。如需删除请联系福建考级中心。');");
+        }
+		else if($name1->delete($id)){
 				if($name=="Kjj"){
 					$this->show("alert('删除成功');bm_load('cb_select');");
 				}elseif($name=="Zygl"){
@@ -493,7 +532,8 @@ public function download_index(){
 				}elseif($name=="bm_admin"){
 					$this->show("alert('删除成功');bm_load('bm_admin_select');");
 				}
-			}else{
+			}
+        else{
 			$this->show("alert('删除失败');");
 		}
 
