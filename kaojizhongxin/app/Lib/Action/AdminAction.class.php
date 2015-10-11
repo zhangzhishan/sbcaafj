@@ -15,106 +15,164 @@ class AdminAction extends Action {
 		  $this->display('index');
     }
 
-
-    public function upload_index(){
-
-
-
-        if ( I('action') == 'add' ){  //添加
-            $this->display('upload_add');
-        } elseif ( I('action') == 'edit' ){  //修改
-            // print_r('ddd');
-
-            $res = M('Update');
-            $vo = $res->where('id=' .I('id'))->find();
-
-            $this->assign('vo' ,$vo);
-            $this->display('upload_edit');
-
-        } else {  //列表
-
-            $res = M('Update');
-            $list = $res->where('is_special = 0')->order('id')->select();
-
-            $this->assign('list' ,$list);
-            $this->display('upload_index');
-
-        }
-
-    }
-        public function upload_special(){
-
-
-
-        if ( I('action') == 'add' ){  //添加
-            $this->display('upload_add_special');
-        } elseif ( I('action') == 'edit' ){  //修改
-            // print_r('ddd');
-
-            $res = M('Update');
-            $vo = $res->where('id=' .I('id'))->find();
-
-            $this->assign('vo' ,$vo);
-            $this->display('upload_edit_special');
-
-        } else {  //列表
-
-            $res = M('Update');
-            $list = $res->where('is_special = 1')->order('id')->select();
-
-            $this->assign('list' ,$list);
-            $this->display('upload_special');
-
-        }
-
-    }
-
-public function download_index(){
+        /**
+     * this function is used for export information of students
+     *
+     * @return void
+     */
+    public function subinfo()
+    {
+        $exam_port = M('kjj');
+        $exam_factor = M('zygl');
+        $students = M('ksbm');
+        $ports = $exam_port->getField('bm_id, bm_name');
+        $factors = $exam_factor->getField('bm_id, bm_name');
+        $test = $students->field('bm_zy, bm_level, bm_kjj, bm_kszt,count(*)')->where('bm_kszt <> 2')->group('bm_zy, bm_level, bm_kjj, bm_kszt')->select();
+        /*
+         * var_dump($test);
+         */
+        $xlsName = "name";
+        $xlsData = $test;
+        $xlsCell  = array(
+            array('bm_zy','zhuanye'),
+            array('bm_level','dengji'),
+            array('bm_kjj','kaodian'),
+            array('bm_kszt','kaoshizhuangtai'),
+            array('count(*)','shuliang')
+        );
+        $cellNum = count($xlsData);
+        /*
+         * var_dump($cellNum);
+         */
+        $xlsCell = $students->field('distinct(`bm_kjj`)')->where('bm_kszt <> 2')->select();
+        $factors = $exam_factor->field('bm_name')->select();
+        $this->myExportExcel($factors, $xlsName, $xlsCell, $xlsData);
+        foreach ($ports as $port){
+            foreach ($factors as $factor){
+                for ($i = 1; $i <= 9; $i++) {
+                    $base_sql = 'bm_kjj = "'. $port .'" AND bm_level = '. $i . ' AND bm_zy = "'. $factor . '"';
+                    $wait_sql = $base_sql. ' AND bm_kszt = 0';
+                    $result_sql = $base_sql. ' AND bm_kszt = 1';
+                    /*
+                     * $wait_students = $students->where($wait_sql)->count();
+                     */
+                    /*
+                     * var_dump($wait_students);
+                     */
+                    /*
+                     * var_dump($wait_sql);
+                     * var_dump($wait_students);
+                     */
 
 
-            $res = M('Update');
-            // die(I('id'));
-            // var_dump($_SESSION);
-            if ($_SESSION['username'] == '111111') {
-                $list = $res->where('is_special = 1')->order('id')->select();
+                }
             }
-            else {
-                $list = $res->where('is_special = 0')->order('id')->select();
+
+
+        }
+        return null;
+    }
+    public function myExportExcel($firstLine, $expTitle,$expCellName,$expTableData){
+        $xlsTitle = iconv('utf-8', 'gb2312', $expTitle);//文件名称
+        $fileName = $xlsTitle.date('_YmdHis');//or $xlsTitle 文件名称可根据自己情况设定
+        $cellNum = count($expCellName);
+        $dataNum = count($expTableData);
+        $firstNum = count($firstLine);
+        vendor("PHPExcel.PHPExcel");
+        $objPHPExcel = new PHPExcel();
+        $cellName = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','AA','AB','AC','AD','AE','AF','AG','AH','AI','AJ','AK','AL','AM','AN','AO','AP','AQ','AR','AS','AT','AU','AV','AW','AX','AY','AZ');
+        $objPHPExcel->getActiveSheet(0)->setCellValue('A1', '专业');
+        $objPHPExcel->getActiveSheet(0)->setCellValue('B1', '级别');
+
+        /*
+         * $objPHPExcel->getActiveSheet(0)->mergeCells('C1:'.$cellName[$cellNum-1].'1');//合并单元格
+         */
+        for($i=1;$i < $cellNum + 1;$i++){
+            $objPHPExcel->setActiveSheetIndex(0)->setCellValue($cellName[2 * $i].'1', $expCellName[$i - 1]['bm_kjj']. '(待考)');
+            $objPHPExcel->setActiveSheetIndex(0)->setCellValue($cellName[2 * $i + 1].'1', $expCellName[$i - 1]['bm_kjj']. '(评卷中)');
+        }
+        $k = 1;
+        for($i=0;$i < $firstNum;$i++){
+            for ($j = 0; $j < 9; $j++) {
+                $k = $k + 1;
+                $objPHPExcel->getActiveSheet(0)->setCellValue('A'.$k, $firstLine[$i]['bm_name']);
+                $objPHPExcel->getActiveSheet(0)->setCellValue('B'.$k, $j + 1);
+
             }
-            
-
-            $this->assign('list' ,$list);
-            $this->display('download_index');
-
-
-
-    }
-
-    Public function handle(){
-
-        $res = M('Update');
-
-        $data['id'] = I('id');
-        // var_dump($data);
-
-        // print_r($data['id']);
-        // exit;
-
-        If( I('action') == 'del'){
-            $res->where('id=' . $data['id'])->delete();
-        } else {
-            $res->save($data);
+        }
+          // Miscellaneous glyphs, UTF-8
+        for($i=0;$i<$firstNum;$i++){
+            for ($tmp = 0; $tmp < 9; $tmp++) {
+                for($j=0;$j<$cellNum;$j++){
+                    $objPHPExcel->getActiveSheet(0)->setCellValue($cellName[2 * $j + 2].($i * 9 + $tmp + 2), 0);
+                    $objPHPExcel->getActiveSheet(0)->setCellValue($cellName[2 * $j + 3].($i * 9 + $tmp + 2), 0);
+                    for ($allNum = 0; $allNum < $dataNum; $allNum++) {
+                        if ($expTableData[$allNum]['bm_zy'] == $firstLine[$i]['bm_name'] &&
+                            $expTableData[$allNum]['bm_level'] == $tmp + 1 &&
+                            $expTableData[$allNum]['bm_kjj'] == $expCellName[$j]['bm_kjj']) {
+                                if ($expTableData[$allNum]['bm_kszt'] == 0) {
+                                    $objPHPExcel->getActiveSheet(0)->setCellValue($cellName[2 * $j + 2].($i * 9 + $tmp + 2), $expTableData[$allNum]['count(*)']);
+                                }
+                                else {
+                                    $objPHPExcel->getActiveSheet(0)->setCellValue($cellName[2 * $j + 3].($i * 9 + $tmp + 2), $expTableData[$allNum]['count(*)']);
+                                }
+                        }
+                    }
+                }
+            }
         }
 
-        if($res){
-        	// $this->show('操作成功！');
-            $this->success('操作成功!');
-        } else {
-            $this->error('操作失败');
-            // $this->show('操作失败！');
+        header('pragma:public');
+        header('Content-type:application/vnd.ms-excel;charset=utf-8;name="'.$xlsTitle.'.xls"');
+        header("Content-Disposition:attachment;filename=$fileName.xls");//attachment新窗口打印inline本窗口打印
+        $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+        $objWriter->save('php://output');
+        exit;
+    }
+
+
+
+
+    /**
+     +----------------------------------------------------------
+     * Export Excel
+     +----------------------------------------------------------
+     * @param $expTitle     string File name
+     +----------------------------------------------------------
+     * @param $expCellName  array  Column name
+     +----------------------------------------------------------
+     * @param $expTableData array  Table data
+     +----------------------------------------------------------
+     */
+    public function exportExcel($expTitle,$expCellName,$expTableData){
+        $xlsTitle = iconv('utf-8', 'gb2312', $expTitle);//文件名称
+        $fileName = $xlsTitle.date('_YmdHis');//or $xlsTitle 文件名称可根据自己情况设定
+        $cellNum = count($expCellName);
+        $dataNum = count($expTableData);
+        vendor("PHPExcel.PHPExcel");
+        $objPHPExcel = new PHPExcel();
+        $cellName = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','AA','AB','AC','AD','AE','AF','AG','AH','AI','AJ','AK','AL','AM','AN','AO','AP','AQ','AR','AS','AT','AU','AV','AW','AX','AY','AZ');
+
+        $objPHPExcel->getActiveSheet(0)->mergeCells('A1:'.$cellName[$cellNum-1].'1');//合并单元格
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('A1', $expTitle.'  Export time:'.date('Y-m-d H:i:s'));
+        for($i=0;$i<$cellNum;$i++){
+            $objPHPExcel->setActiveSheetIndex(0)->setCellValue($cellName[$i].'2', $expCellName[$i][1]);
+        }
+          // Miscellaneous glyphs, UTF-8
+        for($i=0;$i<$dataNum;$i++){
+          for($j=0;$j<$cellNum;$j++){
+            $objPHPExcel->getActiveSheet(0)->setCellValue($cellName[$j].($i+3), $expTableData[$i][$expCellName[$j][0]]);
+          }
         }
 
+        header('pragma:public');
+        header('Content-type:application/vnd.ms-excel;charset=utf-8;name="'.$xlsTitle.'.xls"');
+        header("Content-Disposition:attachment;filename=$fileName.xls");//attachment新窗口打印inline本窗口打印
+        $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+        $objWriter->save('php://output');
+        exit;
     }
+
 
 
     public function save(){
@@ -273,7 +331,7 @@ public function download_index(){
             $event_start_time = $exam_info['k_time'];
             $event_end_time = $exam_info['j_time'];
 
-            if ($_SESSION['zt'] == 2 && ($stu_status != 0 or $exam_ison == false or strtotime($exam_time) > strtotime($event_end_time) or strtotime($exam_time) < strtotime($event_start_time))) {
+            if ($_SESSION['zt'] == 2 && ($stu_status != 0 or $exam_ison == 'false' or strtotime($exam_time) > strtotime($event_end_time) or strtotime($exam_time) < strtotime($event_start_time))) {
             # code...
             // $this->show($exam_id);
                 $this->show("考生资料已确认，无法修改。如需修改请联系福建考级中心。");
@@ -282,7 +340,7 @@ public function download_index(){
             {
                 $Zygl   =   M('Zygl');
              $list1 = $Zygl->select();
-             
+
              $ksbm   =   M('ksbm');
              $list = $ksbm->where('id='.$id)->select();
              $kjj  =M('kjj');
@@ -294,7 +352,7 @@ public function download_index(){
              $this->data3= $list[0];
              $this->display('ksbm_update');
             }
-		 
+
 		}
 	//考生报名确认
 	public function kshd_update_ac(){
@@ -540,15 +598,15 @@ public function download_index(){
 
 	}
 
-           public function  port_update_exam(){        
-         $id=$this->_get("id"); 
+           public function  port_update_exam(){
+         $id=$this->_get("id");
          $kshd   =   M('kshd');
          $list = $kshd->where('bm_id='.$id)->select();
          //$this->show(print_r($list));
          $this->data1= $list;
         // print_r($list);
          $this->port_edit_exam();
-        // $this->display('ks_show');       
+        // $this->display('ks_show');
         }
 
             public function  port_edit_exam(){
@@ -559,7 +617,7 @@ public function download_index(){
     public function port_show_exam()
     {
         # code...
-        $id=session("kjj_id");  
+        $id=session("kjj_id");
         // var_dump($_SESSION);
         // echo $id;
         // echo $id;
