@@ -443,12 +443,17 @@
                             <a onClick="bm_load('upload_special')"  href="#">特殊资料管理</a>
                         </li>
                     </if>
+                    <if condition="$Think.session.username eq 'xiaodan' ">
+                        <li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
+                           <a href="__URL__/subinfo">考生统计资料</a>
+                        </li>
+                     </if>
                     <if condition="$Think.session.zt eq 2 ">
                         <li class="list-group-item"><span class="glyphicon glyphicon-expand"></span>
                            <a onClick="bm_load('download_index')"  href="#">资料下载</a>
                         </li>
-                     </ul>  
                     </if>
+                     </ul>  
                 </div>
        	 </div>
         <div class="col-sm-10">

@@ -31,7 +31,7 @@ class AdminAction extends Action {
         /*
          * var_dump($test);
          */
-        $xlsName = "name";
+        $xlsName = "exam_info";
         $xlsData = $test;
         $xlsCell  = array(
             array('bm_zy','zhuanye'),
@@ -47,29 +47,8 @@ class AdminAction extends Action {
         $xlsCell = $students->field('distinct(`bm_kjj`)')->where('bm_kszt <> 2')->select();
         $factors = $exam_factor->field('bm_name')->select();
         $this->myExportExcel($factors, $xlsName, $xlsCell, $xlsData);
-        foreach ($ports as $port){
-            foreach ($factors as $factor){
-                for ($i = 1; $i <= 9; $i++) {
-                    $base_sql = 'bm_kjj = "'. $port .'" AND bm_level = '. $i . ' AND bm_zy = "'. $factor . '"';
-                    $wait_sql = $base_sql. ' AND bm_kszt = 0';
-                    $result_sql = $base_sql. ' AND bm_kszt = 1';
-                    /*
-                     * $wait_students = $students->where($wait_sql)->count();
-                     */
-                    /*
-                     * var_dump($wait_students);
-                     */
-                    /*
-                     * var_dump($wait_sql);
-                     * var_dump($wait_students);
-                     */
 
 
-                }
-            }
-
-
-        }
         return null;
     }
     public function myExportExcel($firstLine, $expTitle,$expCellName,$expTableData){
@@ -100,6 +79,7 @@ class AdminAction extends Action {
 
             }
         }
+        $objPHPExcel->getActiveSheet(0)->setCellValue('A'.($k+1), '统计');
           // Miscellaneous glyphs, UTF-8
         for($i=0;$i<$firstNum;$i++){
             for ($tmp = 0; $tmp < 9; $tmp++) {
@@ -120,6 +100,10 @@ class AdminAction extends Action {
                     }
                 }
             }
+        }
+        for ($i = 0; $i < $cellNum; $i++) {
+            $objPHPExcel->getActiveSheet(0)->setCellValue($cellName[2 * $i + 2].($firstNum * 9 + 2), "=SUM(".$cellName[2 * $i + 2]."2:".$cellName[2 * $i + 2].($firstNum * 9 + 1).")");
+            $objPHPExcel->getActiveSheet(0)->setCellValue($cellName[2 * $i + 3].($firstNum * 9 + 2), "=SUM(".$cellName[2 * $i + 3]."2:".$cellName[2 * $i + 3].($firstNum * 9 + 1).")");
         }
 
         header('pragma:public');
